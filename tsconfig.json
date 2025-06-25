@@ -21,7 +21,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"],
-      "@comp/*": ["components/*"]
+      "@comps/*": ["app/components/*"],
+      "@utils/*": ["app/utils/*"],
+      "@images/*": ["app/public/images/*"],
+      "@svgs/*": ["app/components/svgs/*"],
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
