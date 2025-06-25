@@ -18,13 +18,15 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@comps/*": ["app/components/*"],
+      "@utils/*": ["app/utils/*"],
+      "@images/*": ["app/public/images/*"],
+      "@svgs/*": ["app/components/svgs/*"]
     },
-    "types": [
-        "./cloudflare-env.d.ts",
-        "node"
-    ]
+    "types": ["./cloudflare-env.d.ts", "node"]
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
