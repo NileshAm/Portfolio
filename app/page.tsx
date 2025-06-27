@@ -15,8 +15,8 @@ export default function Home() {
             </span>
           </div>
           <div className="w-50 p-2 px-6 text-lg text-justify leading-tight">
-            Hi! I&apos;m Nilesh Amarathunge, a passionate engineering undergraduate
-            currently studing in{" "}
+            Hi! I&apos;m Nilesh Amarathunge, a passionate engineering
+            undergraduate currently studing in{" "}
             <strong className="text-highlight">
               University of Moratuwa, Sri Lanka
             </strong>
@@ -32,10 +32,11 @@ export default function Home() {
             <br />
             <br />
             Looking ahead, I aspire to become a highly skilled engineer and
-            researcher in the fields of AI and autonomous systems. I&apos;m driven by
-            curiosity, powered by learning, and ready to take on opportunities
-            that challenge and grow me — whether that&apos;s collaborating on
-            impactful projects or exploring new technological frontiers.
+            researcher in the fields of AI and autonomous systems. I&apos;m
+            driven by curiosity, powered by learning, and ready to take on
+            opportunities that challenge and grow me — whether that&apos;s
+            collaborating on impactful projects or exploring new technological
+            frontiers.
           </div>
         </div>
         <Image
@@ -48,6 +49,5 @@ export default function Home() {
       </div>
       <Education />
     </main>
-
   );
 }
