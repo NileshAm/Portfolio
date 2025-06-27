@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main>
       <div className="flex">
-        <div>
+        <div className="w-2/3">
           <div className="text-5xl p-6">
             Hi,
             <br /> I am{" "}
@@ -14,7 +14,7 @@ export default function Home() {
               Nilesh Amarathunge
             </span>
           </div>
-          <div className="w-50 p-2 px-6 text-lg text-justify leading-tight">
+          <div className="p-2 px-6 text-lg text-justify leading-tight">
             Hi! I&apos;m Nilesh Amarathunge, a passionate engineering
             undergraduate currently studing in{" "}
             <strong className="text-highlight">
@@ -40,11 +40,11 @@ export default function Home() {
           </div>
         </div>
         <Image
-          src={CDNFetch("profile-photo.jpg")}
+          src={CDNFetch("/images/profile-photo.jpg")}
           width={500}
           height={500}
           alt="Picture of the author"
-          className="w-50 m-2 mt-4 rounded-full shadow-2xl blur-mask -z-10"
+          className="w-1/3 m-2 mt-4 rounded-full shadow-2xl blur-mask -z-10"
         />
       </div>
       <Education />

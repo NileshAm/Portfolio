@@ -1,9 +1,36 @@
+import HomeCard from "@comps/home/HomeCard/HomeCard";
+import RightArrow from "@svgs/RightArrow";
+import Link from "next/link";
+
 const Education = () => {
   return (
     <>
       <hr className="m-5 border-highlight" />
       <div className="justify-center flex">
-        <h1 className="text-4xl ms-5 font-bold underline">Education</h1>
+        <h1 className="text-4xl ms-5 font-bold">Education</h1>
+      </div>
+      <div className="flex">
+        <HomeCard image="/images/56b8ffc1-e90d-4f18-822d-3ca6f2a376cc.jpg">
+          Maliyadeva College, located in Kurunegala, Sri Lanka, is among the
+          country&apos;s oldest national schools. Established in 1888 by the
+          Buddhist Theosophical Society under Colonel Henry Steel Olcott, it
+          serves over 4,000 students.
+        </HomeCard>
+        <HomeCard image="/images/be0393d2-2e99-4a22-82ee-4dacbfdc5bdd.jpg">
+          University of Moratuwa, located in Moratuwa, is Sri Lanka’s premier
+          engineering and technology university. Established in 1972, its motto
+          “Wisdom is all Wealth” reflects its focus on academic and technical
+          excellence.
+        </HomeCard>
+        <div className="self-center ms-4 ">
+          <Link
+            href={"/education"}
+            className="flex w-1/3 border-4 rounded-full border-secondary p-2 hover:bg-secondary hover:text-textPrimary transition-all"
+          >
+            <RightArrow className="w-inherit" />
+            <p className="text-center leading-tight">See More</p>
+          </Link>
+        </div>
       </div>
     </>
   );
