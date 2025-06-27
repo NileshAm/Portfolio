@@ -1,4 +1,4 @@
-const Linkedin = ({className}:{className?:string}) => {
+const Linkedin = ({ className }: { className?: string }) => {
   return (
     <svg
       fill="currentColor"
@@ -20,6 +20,6 @@ const Linkedin = ({className}:{className?:string}) => {
       </g>
     </svg>
   );
-}
+};
 
-export default Linkedin
+export default Linkedin;
