@@ -85,3 +85,7 @@ html {
 .btn-hover {
   @apply hover:bg-highlight hover:text-secondary transition-all hover:scale-105;
 }
+
+.project-title {
+  @apply text-5xl my-5 ms-2 text-center;
+}

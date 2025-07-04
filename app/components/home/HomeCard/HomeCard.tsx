@@ -5,11 +5,13 @@ import Link from "next/link";
 const HomeCard = ({
   children,
   className,
+  imgClassName = "",
   image,
   href,
 }: {
   children: string;
   className?: string;
+  imgClassName?: string;
   image: string;
   href: string;
 }) => {
@@ -25,7 +27,7 @@ const HomeCard = ({
         <Image
           src={CDNFetch(image)}
           alt="Image"
-          className="object-cover rounded-lg"
+          className={"object-cover rounded-lg" + imgClassName}
           width={300}
           height={(300 / 4) * 3}
         />

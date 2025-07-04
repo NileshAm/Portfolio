@@ -3,7 +3,7 @@ import Link from "next/link";
 const NavBar = () => {
   return (
     <>
-      <nav className="p-3 fixed w-full backdrop-blur bg-gradient-to-b from-primary-dark to-primary-dark/60">
+      <nav className="p-3 fixed w-full backdrop-blur bg-gradient-to-b from-primary-dark to-primary-dark/60 z-50">
         <ul className="space-x-4 justify-evenly flex">
           <li className="nav-item">
             <Link href="/" className="nav-link">

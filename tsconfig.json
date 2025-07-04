@@ -24,10 +24,17 @@
       "@comps/*": ["app/components/*"],
       "@utils/*": ["app/utils/*"],
       "@images/*": ["app/public/images/*"],
-      "@svgs/*": ["app/components/svgs/*"]
+      "@svgs/*": ["app/components/svgs/*"],
+      "@types/*": ["app/types/*"]
     },
     "types": ["./cloudflare-env.d.ts", "node"]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "types/*.ts"
+  ],
   "exclude": ["node_modules"]
 }

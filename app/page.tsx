@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { CDNFetch } from "@utils/imageFetch";
 import Education from "@comps/home/Education/Education";
+import Projects from "@comps/home/Projects/Projects";
 
 export default function Home() {
   return (
@@ -48,6 +49,7 @@ export default function Home() {
         />
       </div>
       <Education />
+      <Projects />
     </main>
   );
 }

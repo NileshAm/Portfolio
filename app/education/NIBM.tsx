@@ -94,7 +94,10 @@ const NIBM = () => {
                 and data handling.
               </p>
               <div className="w-36 p-2 btn btn-hover my-5">
-                <a href="/projects/D-Mobile" className="text-sm rounded-lg">
+                <a
+                  href="/projects/DMobile-WebApp"
+                  className="text-sm rounded-lg"
+                >
                   <div className="flex justify-center">
                     <span className=" ms-1 text-center">Read more</span>
                     <RightArrow className="ms-2 w-4" />
