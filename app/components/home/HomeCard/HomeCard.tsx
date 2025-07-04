@@ -6,14 +6,16 @@ const HomeCard = ({
   children,
   className,
   image,
+  href,
 }: {
   children: string;
   className?: string;
   image: string;
+  href: string;
 }) => {
   return (
     <Link
-      href={"/education"}
+      href={href}
       className={
         "border-4 border-secondary rounded-lg bg-secondary flex ms-4 w-1/2 my-3 hover:scale-102 transition-all " +
         className
