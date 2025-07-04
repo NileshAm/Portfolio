@@ -9,10 +9,26 @@ module.exports = {
           dark: "#0a0b26",
           light: "#202380",
         },
-        secondary: "#52154e",
-        highlight: "#f9cff2",
-        textPrimary: "#efe9e7",
-        textSecondary: "#dae0f2",
+        secondary: {
+          DEFAULT: "#52154e",
+          dark: "#370837",
+          light: "#833775",
+        },
+        highlight: {
+          DEFAULT: "#f9cff2",
+          dark: "#b29bb5", // dusty rose
+          light: "#ffe5fb", // pale pink
+        },
+        textPrimary: {
+          DEFAULT: "#efe9e7",
+          dark: "#cfc7c3", // softer, muted white
+          light: "#ffffff", // pure white
+        },
+        textSecondary: {
+          DEFAULT: "#dae0f2",
+          dark: "#a3a8be", // steely muted blue
+          light: "#f2f5ff", // icy pastel blue
+        },
       },
     },
   },

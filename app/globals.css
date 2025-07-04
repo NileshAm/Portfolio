@@ -29,19 +29,27 @@
 body {
   background: var(--background);
   color: var(--textPrimary);
-  font-family: monospace,Arial, Helvetica, sans-serif;
+  font-family: monospace, Arial, Helvetica, sans-serif;
 }
 
-.nav-link{
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-link {
   @apply text-textPrimary font-bold text-xl hover:text-textSecondary transition-colors;
 }
 
-.nav-item{
-  @apply hover:scale-125 transition-all
+.nav-item {
+  @apply hover:scale-125 transition-all;
 }
 
 .blur-mask {
-  -webkit-mask-image: radial-gradient(circle, var(--primary) 65%, transparent 70%);
+  -webkit-mask-image: radial-gradient(
+    circle,
+    var(--primary) 65%,
+    transparent 70%
+  );
   mask-image: radial-gradient(circle, var(--primary) 65%, transparent 70%);
   mask-composite: intersect;
 }
@@ -57,11 +65,23 @@ body {
 .scale-102 {
   --tw-scale-x: 1.02;
   --tw-scale-y: 1.02;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:scale-102:hover {
   --tw-scale-x: 1.02;
   --tw-scale-y: 1.02;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
+    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
+    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.btn {
+  @apply bg-secondary text-textPrimary font-bold p-2 rounded-lg;
+}
+
+.btn-hover {
+  @apply hover:bg-highlight hover:text-secondary transition-all hover:scale-105;
 }
