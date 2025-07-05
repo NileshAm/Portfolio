@@ -19,11 +19,11 @@ const HomeCard = ({
     <Link
       href={href}
       className={
-        "border-4 border-secondary rounded-lg bg-secondary flex ms-4 w-1/2 my-3 hover:scale-102 transition-all " +
+        "border-4 w-1/2 border-secondary rounded-lg bg-secondary flex ms-4 my-3 mx-3 hover:scale-102 transition-all " +
         className
       }
     >
-      <div className="relative w-2/3">
+      <div className="relative">
         <Image
           src={CDNFetch(image)}
           alt="Image"
@@ -31,10 +31,10 @@ const HomeCard = ({
           width={300}
           height={(300 / 4) * 3}
         />
-        <div className="absolute top-0 right-0 h-full w-24 bg-gradient-to-l from-secondary to-transparent" />
+        <div className="absolute top-0 right-0 h-full w-1/4 bg-gradient-to-l from-secondary to-transparent" />
       </div>
 
-      <div className="w-2/3 text-justify p-2">{children}</div>
+      <div className="w-2/3 text-justify p-2 pe-4">{children}</div>
     </Link>
   );
 };
