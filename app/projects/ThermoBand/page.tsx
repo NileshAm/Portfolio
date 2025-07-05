@@ -5,12 +5,12 @@ import Viewer3D from "@comps/Viewer3D/Viewer3D";
 
 const page = () => {
   return (
-    <>
+    <main className="mx-3">
       <h1 className="project-title">ThermoBand</h1>
       <div className="flex">
         <div className="ms-2 me-3">
           <h2 className="text-3xl mt-3 underline">Overview</h2>
-          <table className="mt-2">
+          <table className="mt-2 leading-relaxed mx-5">
             <thead>
               <tr>
                 <th className="w-1/5"></th>
@@ -20,7 +20,7 @@ const page = () => {
             <tbody className="align-top">
               <tr>
                 <td>Role:</td>
-                <td className="pb-4 text-justify">
+                <td className="pb-5 text-justify">
                   As the lead developer, I handled the full design and assembly
                   of ThermoBand: from 3D enclosure modeling in SolidWorks to
                   custom part and PCB selection, manufacturing, firmware
@@ -31,7 +31,7 @@ const page = () => {
               </tr>
               <tr>
                 <td>Outcome:</td>
-                <td className="pb-4 text-justify">
+                <td className="pb-5 text-justify">
                   Delivered a fully functional IoT-enabled wearable prototype
                   that monitors body temperature in real time and syncs data to
                   a server. The project demonstrated a seamless blend of
@@ -40,7 +40,7 @@ const page = () => {
               </tr>
               <tr>
                 <td>Skills Applied:</td>
-                <td className="pb-4 text-justify flex flex-wrap">
+                <td className="pb-5 text-justify flex flex-wrap">
                   <span className="px-2 py-1 mx-2 mb-2 bg-primary-light rounded-lg">
                     Solidworks
                   </span>
@@ -92,8 +92,8 @@ const page = () => {
           What I Did in the ThermoBand Project
         </h2>
         <div className="flex">
-          <ol className="list-decimal ms-7 mt-2 me-3">
-            <li className="my-4">
+          <ol className="list-decimal ms-7 mt-2 me-3 text-justify px-5 pe-10 leading-relaxed">
+            <li className="my-6">
               <strong className="text-lg text-highlight">
                 3D Mechanical Design
               </strong>
@@ -104,7 +104,7 @@ const page = () => {
                 </li>
               </ul>
             </li>
-            <li className="my-4">
+            <li className="my-6">
               <strong className="text-lg text-highlight">
                 Component & PCB Design
               </strong>
@@ -121,7 +121,7 @@ const page = () => {
                 </li>
               </ul>
             </li>
-            <li className="my-4">
+            <li className="my-6">
               <strong className="text-lg text-highlight">
                 Manufacturing & Assembly
               </strong>
@@ -141,7 +141,7 @@ const page = () => {
                 </li>
               </ul>
             </li>
-            <li className="my-4">
+            <li className="my-6">
               <strong className="text-lg text-highlight">
                 Firmware Development
               </strong>
@@ -156,7 +156,7 @@ const page = () => {
                 </li>
               </ul>
             </li>
-            <li className="my-4">
+            <li className="my-6">
               <strong className="text-lg text-highlight">
                 Backend Integration & Security
               </strong>
@@ -177,7 +177,7 @@ const page = () => {
       </div>
       <div className="m-3 mt-4">
         <h2 className="text-3xl underline font-bold">Conclution</h2>
-        <p className="mt-2 text-justify">
+        <p className="mt-2 text-justify leading-loose px-5">
           In the end, the ThermoBand turned out to be a fully working wearable
           device that could track body temperature and send updates to a remote
           server over Wi-Fi. I was involved in pretty much every part of the
@@ -214,7 +214,7 @@ const page = () => {
           <p>Images will be added sooon......</p>
         </div>
       </div>
-    </>
+    </main>
   );
 };
 

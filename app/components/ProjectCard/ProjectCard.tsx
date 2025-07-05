@@ -26,7 +26,7 @@ const ProjectCard = ({
         />
         <div className="absolute bottom-0 right-0 h-1/4 w-full bg-gradient-to-t from-secondary to-transparent" />
       </div>
-      <p className="p-2 text-justify">{children}</p>
+      <p className="px-5 py-3 text-justify leading-relaxed">{children}</p>
     </Link>
   );
 };

@@ -4,12 +4,12 @@ import Github from "@svgs/Github";
 import Image from "next/image";
 const page = () => {
   return (
-    <>
+    <main className="px-3">
       <h1 className="project-title">Robogames 2025</h1>
       <div className="flex">
         <div className="ms-2">
           <h2 className="text-3xl mt-3 underline">Overview</h2>
-          <table className="mt-2">
+          <table className="mt-2 mx-5">
             <thead>
               <tr>
                 <th className="w-1/5"></th>
@@ -19,7 +19,7 @@ const page = () => {
             <tbody className="align-top">
               <tr>
                 <td>Role:</td>
-                <td className="pb-4 text-justify">
+                <td className="pb-5 text-justify leading-relaxed">
                   I was responsible for the entire 3D design of the combat
                   robot, from conceptual modeling to structural optimization. I
                   also contributed to hardware part selection, ensuring the
@@ -29,7 +29,7 @@ const page = () => {
               </tr>
               <tr>
                 <td>Outcome:</td>
-                <td className="pb-4 text-justify">
+                <td className="pb-5 text-justify leading-relaxed">
                   Our robot won 2 battles against rival teams, a strong
                   performance that demonstrated our design&apos;s resilience and
                   combat efficiency. This project combined practical
@@ -59,7 +59,7 @@ const page = () => {
               </tr>
             </tbody>
           </table>
-          <div className="w-36 p-2 btn btn-hover my-1">
+          <div className="w-36 p-2 btn btn-hover my-1 ms-5">
             <a
               href="https://github.com/NileshAm/RoboGames-TeamLynx"
               target="_blank"
@@ -88,9 +88,9 @@ const page = () => {
           As a key member of Team LYNX, I undertook multiple critical
           responsibilities:
         </p>
-        <ol className="list-decimal ms-7 mt-2">
+        <ol className="list-decimal ms-7 mt-2 leading-relaxed px-5">
           <li>
-            <div className="flex my-4">
+            <div className="flex my-5">
               <strong className="w-1/6 text-highlight">
                 Lead Mechanical Designer:
               </strong>
@@ -103,7 +103,7 @@ const page = () => {
             </div>
           </li>
           <li>
-            <div className="flex my-4 w-full">
+            <div className="flex my-5 w-full">
               <strong className="w-1/6 text-highlight">
                 Component Selection Support:
               </strong>
@@ -116,7 +116,7 @@ const page = () => {
             </div>
           </li>
           <li>
-            <div className="flex my-4">
+            <div className="flex my-5">
               <strong className="w-1/6 text-highlight">
                 Team Collaboration & Build Assistance:
               </strong>
@@ -128,7 +128,7 @@ const page = () => {
             </div>
           </li>
           <li>
-            <div className="flex my-4">
+            <div className="flex my-5">
               <strong className="w-1/6 text-highlight">
                 Competition Performance:
               </strong>
@@ -146,9 +146,9 @@ const page = () => {
         <h2 className="text-3xl underline font-bold">
           What I Did in the RoboGames Project
         </h2>
-        <div className="flex">
+        <div className="flex leading-relaxed">
           <ol className="list-decimal ms-7 mt-2">
-            <li className="my-4">
+            <li className="my-5">
               <strong className="text-lg text-highlight">
                 Requirements Gathering
               </strong>
@@ -163,7 +163,7 @@ const page = () => {
                 </li>
               </ul>
             </li>
-            <li className="my-4">
+            <li className="my-5">
               <strong className="text-lg text-highlight">
                 3D Modeling in SolidWorks
               </strong>
@@ -177,7 +177,7 @@ const page = () => {
                 </ul>
               </ul>
             </li>
-            <li className="my-4">
+            <li className="my-5">
               <strong className="text-lg text-highlight">Part Selection</strong>
               <ul className="list-disc ms-7">
                 <li>
@@ -195,7 +195,7 @@ const page = () => {
                 </li>
               </ul>
             </li>
-            <li className="my-4">
+            <li className="my-5">
               <strong className="text-lg text-highlight">
                 Fabrication and Assembly
               </strong>
@@ -205,7 +205,7 @@ const page = () => {
                 <li>Verified alignment and mounting tolerances.</li>
               </ul>
             </li>
-            <li className="my-4">
+            <li className="my-5">
               <strong className="text-lg text-highlight">
                 Testing and Iteration
               </strong>
@@ -222,7 +222,7 @@ const page = () => {
                 </li>
               </ul>
             </li>
-            <li className="my-4">
+            <li className="my-5">
               <strong className="text-lg text-highlight">
                 Competition and On-the-Spot Fixes
               </strong>
@@ -246,7 +246,7 @@ const page = () => {
       </div>
       <div className="m-3 mt-4">
         <h2 className="text-3xl underline font-bold">Conclution</h2>
-        <p className="mt-2 text-justify">
+        <p className="mt-2 text-justify leading-relaxed px-5">
           The RoboGames project was a complete engineering-to-execution journey,
           where I transformed ideas into a fully functional, battle-ready robot.
           From digital 3D modeling in SolidWorks to hands-on assembly and
@@ -285,7 +285,7 @@ const page = () => {
           />
         </div>
       </div>
-    </>
+    </main>
   );
 };
 

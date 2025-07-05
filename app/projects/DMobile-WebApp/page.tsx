@@ -3,200 +3,204 @@ import Github from "@svgs/Github";
 import { CDNFetch } from "@/app/utils/imageFetch";
 const page = () => {
   return (
-    <>
+    <main className="mx-3">
       <h1 className="project-title">D-Mobile e-commerce website</h1>
-      <div className="flex">
-        <div className="ms-2">
-          <h2 className="text-3xl mt-3 underline">Overview</h2>
-          <table className="mt-2">
-            <thead>
-              <tr>
-                <th className="w-1/5"></th>
-                <th className="w-auto"></th>
-              </tr>
-            </thead>
-            <tbody className="align-top">
-              <tr>
-                <td>Role:</td>
-                <td className="pb-4 text-justify">
-                  I was the full-stack developer for the D-Mobile e-commerce
-                  website, handling the frontend, backend, and database
-                  architecture. I designed and built a user-friendly React.js
-                  interface for product browsing and purchasing, and developed a
-                  robust Express.js + Node.js backend with RESTful APIs to
-                  support all core functions. The application includes secure
-                  user authentication, real-time inventory tracking, and online
-                  payment integration.
-                </td>
-              </tr>
-              <tr>
-                <td>Outcome:</td>
-                <td className="pb-4 text-justify">
-                  The final product was a complete, fully functional e-commerce
-                  platform tailored for an electronics store. It streamlined the
-                  shopping experience from browsing to checkout, and featured a
-                  powerful admin panel for inventory and order management. The
-                  secure architecture and encrypted data handling ensured a safe
-                  and responsive user experience.
-                </td>
-              </tr>
-              <tr>
-                <td>Skills Applied:</td>
-                <td className="pb-4 text-justify flex flex-wrap">
-                  <span className="px-2 py-1 mx-2 mb-2 bg-primary-light rounded-lg">
-                    React.js
-                  </span>
-                  <span className="px-2 py-1 mx-2 mb-2 bg-primary-light rounded-lg">
-                    Node.js
-                  </span>
-                  <span className="px-2 py-1 mx-2 mb-2 bg-primary-light rounded-lg">
-                    Express.js
-                  </span>
-                  <span className="px-2 py-1 mx-2 mb-2 bg-primary-light rounded-lg">
-                    MySQL
-                  </span>
-                  <span className="px-2 py-1 mx-2 mb-2 bg-primary-light rounded-lg">
-                    Authentication
-                  </span>
-                  <span className="px-2 py-1 mx-2 mb-2 bg-primary-light rounded-lg">
-                    API Development
-                  </span>
-                  <span className="px-2 py-1 mx-2 mb-2 bg-primary-light rounded-lg">
-                    Full-Stack Engineering
-                  </span>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <div className="flex">
-            <div className="w-44   p-2 btn btn-hover my-1 me-3">
-              <a
-                href="https://github.com/NileshAm/final-project-client"
-                target="_blank"
-                className="text-sm rounded-lg"
-              >
-                <div className="flex">
-                  <Github className="w-4" />
-                  <span className=" underline ms-1 text-center">
-                    Frontend Project Files
-                  </span>
-                </div>
-              </a>
-            </div>
-            <div className="w-44   p-2 btn btn-hover my-1 me-3">
-              <a
-                href="https://github.com/NileshAm/final-project-server"
-                target="_blank"
-                className="text-sm rounded-lg"
-              >
-                <div className="flex">
-                  <Github className="w-4" />
-                  <span className=" underline ms-1 text-center">
-                    Backend Project Files
-                  </span>
-                </div>
-              </a>
-            </div>
+      <div className="ms-2">
+        <h2 className="text-3xl mt-3 underline">Overview</h2>
+        <table className="mt-2 leading-relaxed mx-5 ">
+          <thead>
+            <tr>
+              <th className="w-1/5"></th>
+              <th className="w-auto"></th>
+            </tr>
+          </thead>
+          <tbody className="align-top">
+            <tr>
+              <td>Role:</td>
+              <td className="pb-4 text-justify">
+                I was the full-stack developer for the D-Mobile e-commerce
+                website, handling the frontend, backend, and database
+                architecture. I designed and built a user-friendly React.js
+                interface for product browsing and purchasing, and developed a
+                robust Express.js + Node.js backend with RESTful APIs to support
+                all core functions. The application includes secure user
+                authentication, real-time inventory tracking, and online payment
+                integration.
+              </td>
+            </tr>
+            <tr>
+              <td>Outcome:</td>
+              <td className="pb-4 text-justify">
+                The final product was a complete, fully functional e-commerce
+                platform tailored for an electronics store. It streamlined the
+                shopping experience from browsing to checkout, and featured a
+                powerful admin panel for inventory and order management. The
+                secure architecture and encrypted data handling ensured a safe
+                and responsive user experience.
+              </td>
+            </tr>
+            <tr>
+              <td>Skills Applied:</td>
+              <td className="pb-4 text-justify flex flex-wrap">
+                <span className="px-2 py-1 mx-2 mb-2 bg-primary-light rounded-lg">
+                  React.js
+                </span>
+                <span className="px-2 py-1 mx-2 mb-2 bg-primary-light rounded-lg">
+                  Node.js
+                </span>
+                <span className="px-2 py-1 mx-2 mb-2 bg-primary-light rounded-lg">
+                  Express.js
+                </span>
+                <span className="px-2 py-1 mx-2 mb-2 bg-primary-light rounded-lg">
+                  MySQL
+                </span>
+                <span className="px-2 py-1 mx-2 mb-2 bg-primary-light rounded-lg">
+                  Authentication
+                </span>
+                <span className="px-2 py-1 mx-2 mb-2 bg-primary-light rounded-lg">
+                  API Development
+                </span>
+                <span className="px-2 py-1 mx-2 mb-2 bg-primary-light rounded-lg">
+                  Full-Stack Engineering
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div className="flex">
+          <div className="w-44   p-2 btn btn-hover my-1 me-3">
+            <a
+              href="https://github.com/NileshAm/final-project-client"
+              target="_blank"
+              className="text-sm rounded-lg"
+            >
+              <div className="flex">
+                <Github className="w-4" />
+                <span className=" underline ms-1 text-center">
+                  Frontend Project Files
+                </span>
+              </div>
+            </a>
+          </div>
+          <div className="w-44   p-2 btn btn-hover my-1 me-3">
+            <a
+              href="https://github.com/NileshAm/final-project-server"
+              target="_blank"
+              className="text-sm rounded-lg"
+            >
+              <div className="flex">
+                <Github className="w-4" />
+                <span className=" underline ms-1 text-center">
+                  Backend Project Files
+                </span>
+              </div>
+            </a>
           </div>
         </div>
-        <Image
-          src={"/images/a7adc748-48d8-43d4-872b-138398894027.jpg"}
-          alt="D-Mobile e-commerce website"
-          width={800}
-          height={(800 * 9) / 16}
-          className="mx-6 rounded-lg object-contain self-baseline"
-        />
       </div>
+
       <div className="m-3 mt-4">
         <h2 className="text-3xl underline font-bold">
           What I Did in the Web App Project
         </h2>
-        <ol className="list-decimal ms-7 mt-2">
-          <li className="my-4">
-            <strong className="text-lg text-highlight">
-              Front-End Development
-            </strong>
-            <ul className="list-disc ms-7">
-              <li>
-                Built the user interface using React.js, ensuring a responsive
-                design and dynamic client-side rendering.
-              </li>
-              <li>Developed essential components such as:</li>
-              <ul className="list-decimal ms-20">
-                <li>Product listing and detail views</li>
-                <li>Shopping cart interactions</li>
-                <li>Checkout process</li>
-                <li>Order history section</li>
-                <li>Searching and filtering products</li>
+        <div className="flex">
+          <ol className="list-decimal ms-7 mt-2">
+            <li className="my-4">
+              <strong className="text-lg text-highlight">
+                Front-End Development
+              </strong>
+              <ul className="list-disc ms-7">
+                <li>
+                  Built the user interface using React.js, ensuring a responsive
+                  design and dynamic client-side rendering.
+                </li>
+                <li>Developed essential components such as:</li>
+                <ul className="list-decimal ms-20">
+                  <li>Product listing and detail views</li>
+                  <li>Shopping cart interactions</li>
+                  <li>Checkout process</li>
+                  <li>Order history section</li>
+                  <li>Searching and filtering products</li>
+                </ul>
               </ul>
-            </ul>
-          </li>
-          <li className="my-4">
-            <strong className="text-lg text-highlight">
-              Back-End & API Development
-            </strong>
-            <ul className="list-disc ms-7">
-              <li>
-                Built the server with Node.js and Express.js following RESTful
-                API architecture.
-              </li>
-              <li>
-                Implemented secure user authentication:
-                <ul className="list-decimal ms-20">
-                  <li>Password hashing (using bcrypt)</li>
-                  <li>Session management</li>
-                </ul>
-              </li>
-              <li>
-                Created APIs for:
-                <ul className="list-decimal ms-20">
-                  <li>Product management</li>
-                  <li>Inventory control</li>
-                  <li>Order processing</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li className="my-4">
-            <strong className="text-lg text-highlight">
-              Database Design & Integration
-            </strong>
-            <ul className="list-disc ms-7">
-              <li>
-                Designed a structured MySQL database with interconnected tables:
-                <ul className="list-[circle] ms-16">
-                  <li>Users, Products, Orders, OrderItems, Inventory, etc.</li>
-                </ul>
-              </li>
-              <ol className="ms-20 list-decimal"></ol>
-              <li>
-                Established relational integrity with:
-                <ul className="list-decimal ms-20">
-                  <li>One-to-many and many-to-many SQL relationships</li>
-                  <li>Cascading logic for product-stock consistency</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li className="my-4">
-            <strong className="text-lg text-highlight">
-              Security & Payment Integration
-            </strong>
-            <ul className="list-disc ms-7">
-              <li>
-                Applied best practices in data validation, error handling, and
-                authorization workflows.
-              </li>
-              <li>
-                Integrated a secure online payment gateway (Using Stripe):
-                <ul className="list-decimal ms-20">
-                  <li>Tokenized transactions</li>
-                  <li>Verified payment status and feedback</li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-        </ol>
+            </li>
+            <li className="my-4">
+              <strong className="text-lg text-highlight">
+                Back-End & API Development
+              </strong>
+              <ul className="list-disc ms-7">
+                <li>
+                  Built the server with Node.js and Express.js following RESTful
+                  API architecture.
+                </li>
+                <li>
+                  Implemented secure user authentication:
+                  <ul className="list-decimal ms-20">
+                    <li>Password hashing (using bcrypt)</li>
+                    <li>Session management</li>
+                  </ul>
+                </li>
+                <li>
+                  Created APIs for:
+                  <ul className="list-decimal ms-20">
+                    <li>Product management</li>
+                    <li>Inventory control</li>
+                    <li>Order processing</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li className="my-4">
+              <strong className="text-lg text-highlight">
+                Database Design & Integration
+              </strong>
+              <ul className="list-disc ms-7">
+                <li>
+                  Designed a structured MySQL database with interconnected
+                  tables:
+                  <ul className="list-[circle] ms-16">
+                    <li>
+                      Users, Products, Orders, OrderItems, Inventory, etc.
+                    </li>
+                  </ul>
+                </li>
+                <ol className="ms-20 list-decimal"></ol>
+                <li>
+                  Established relational integrity with:
+                  <ul className="list-decimal ms-20">
+                    <li>One-to-many and many-to-many SQL relationships</li>
+                    <li>Cascading logic for product-stock consistency</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li className="my-4">
+              <strong className="text-lg text-highlight">
+                Security & Payment Integration
+              </strong>
+              <ul className="list-disc ms-7">
+                <li>
+                  Applied best practices in data validation, error handling, and
+                  authorization workflows.
+                </li>
+                <li>
+                  Integrated a secure online payment gateway (Using Stripe):
+                  <ul className="list-decimal ms-20">
+                    <li>Tokenized transactions</li>
+                    <li>Verified payment status and feedback</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ol>
+          <Image
+            src={"/images/a7adc748-48d8-43d4-872b-138398894027.jpg"}
+            alt="D-Mobile e-commerce website"
+            width={800}
+            height={(800 * 9) / 16}
+            className="mx-6 rounded-lg object-contain self-baseline"
+          />
+        </div>
       </div>
       <div className="m-3 mt-4">
         <h2 className="text-3xl underline font-bold">Tech Stack</h2>
@@ -234,7 +238,7 @@ const page = () => {
       </div>
       <div className="m-3 mt-4">
         <h2 className="text-3xl underline font-bold">Conclution</h2>
-        <p className="mt-2 text-justify">
+        <p className="mt-2 mx-5 text-justify leading-relaxed">
           The successful completion of the D-Mobile E-commerce platform resulted
           in a fully operational online storefront that streamlined the entire
           sales pipeline—from product display and inventory tracking to user
@@ -266,7 +270,7 @@ const page = () => {
           </video>
         </div>
       </div>
-    </>
+    </main>
   );
 };
 

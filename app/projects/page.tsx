@@ -3,7 +3,7 @@ import { CDNFetch } from "../utils/imageFetch";
 
 const page = () => {
   return (
-    <div className="flex flex-wrap justify-evenly mt-6">
+  <main className="flex flex-wrap justify-evenly mt-6">
       <ProjectCard
         href="/projects/RoboGames-2025"
         src={CDNFetch("/images/f0c11ce6-d748-4db7-ba71-59ac5463216c.jpg")}
@@ -32,7 +32,7 @@ const page = () => {
         and user authentication, making it a complete solution for both
         customers and store administrators.
       </ProjectCard>
-    </div>
+    </main>
   );
 };
 
