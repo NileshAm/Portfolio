@@ -5,8 +5,8 @@ import UOM from "./UOM";
 
 const page = () => {
   return (
-    <>
-      <div className="bg-secondary w-1/6 rounded-xl p-3 m-3 fixed right-0">
+    <main className="px-3 pt-2">
+      <div className="bg-secondary w-1/5 rounded-xl p-3 m-3 fixed right-0">
         <span className="w-full text-center justify-center flex text-lg underline text-highlight">
           Table of Content
         </span>
@@ -51,7 +51,7 @@ const page = () => {
       <UOM />
       <NIBM />
       <Maliyadeva />
-    </>
+    </main>
   );
 };
 

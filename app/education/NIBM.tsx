@@ -14,8 +14,8 @@ const NIBM = () => {
     >
       <SectionTopic id="NIBMinfo" heading="Info">
         <div className="flex">
-          <div className="w-4/5">
-            <p className="text-justify pe-5 leading-tight">
+          <div className="w-4/5 px-5">
+            <p className="text-justify pe-5 leading-relaxed">
               The National Institute of Business Management (NIBM) was founded
               in 1968 under the Ministry of Industries and Scientific Affairs,
               in partnership with the UNDP and ILO, to spearhead business and
@@ -86,7 +86,7 @@ const NIBM = () => {
         <ol className="list-decimal ms-10">
           <TopicList id="NIBMDMobile" heading="D-Mobile Web Application">
             <div className="w-1/2">
-              <p className="">
+              <p className="leading-relaxed pe-10 text-justify">
                 Developed a full-stack E-commerce web application for D-Mobile,
                 an electronics retailer, as part of the NIBM final project. The
                 system supports product browsing, purchasing, inventory
