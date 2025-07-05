@@ -9,8 +9,8 @@ const Maliyadeva = () => {
     <Sections id="Maliyadeva" heading="Maliyadeva College" className="mt-10">
       <SectionTopic id="MaliyadevaInfo" heading="Info">
         <div className="flex">
-          <div className="w-4/5">
-            <p className="text-justify leading-tight pe-5">
+          <div className="w-2/3 px-5">
+            <p className="text-justify leading-relaxed pe-5">
               Maliyadeva College, founded on September 30, 1888 by the Buddhist
               Theosophical Society led by Colonel Henry Steel Olcott, is a
               prestigious national school in Kurunegala, Sri Lanka . Named after
@@ -59,7 +59,7 @@ const Maliyadeva = () => {
             alt="Maliyadeva College"
             width={500}
             height={(500 / 4) * 3}
-            className="rounded-lg mt-3 "
+            className="rounded-lg mt-3 w-1/3"
           />
         </div>
       </SectionTopic>

@@ -9,47 +9,113 @@ const UOM = () => {
   return (
     <Sections id="UOM" heading="University of Moratuwa">
       <SectionTopic id="UOMinfo" heading="Info" className="">
-        <div className="flex">
-          <div className=" w-4/5">
-            <p className="text-justify leading-tight pe-5">
-              The University of Moratuwa—familiarly known as Mora—is Sri
-              Lanka&apos;s leading public technological university, situated in
-              Katubedda, Moratuwa, overlooking Bolgoda Lake . With roots dating
-              back to the Government Technical College (established in 1893), it
-              later became the Ceylon Technical College and Katubedda Campus of
-              the University of Ceylon in 1972, before gaining full university
-              status in 1978.Today, the university serves more than 11,000
-              students (approximately 9,000 undergraduates and 2,500
-              postgraduates), supported by 500 academic staff across multiple
-              faculties including Architecture, Engineering, Information
-              Technology, Graduate Studies, Business, and Medicine. It is
-              internationally recognized, accredited by the University Grants
-              Commission and affiliated with bodies such as the Association of
-              Commonwealth Universities, RIBA, and IET.The university offers
-              extensive academic, cultural, and recreational opportunities
-              through over 25 student clubs, organized sports (from cricket to
-              badminton and rowing), and facilities like gymnasiums and swimming
-              pools . Students have also earned global recognition, having
-              excelled in competitions like Google Summer of Code and Imagine
-              Cup Sri Lanka.Committed to pioneering education and research, the
-              University of Moratuwa continues to shape Sri Lanka&apos;s future
-              leaders in technology and innovation, guided by its enduring motto
-              “Vidyayeva Sarvadhanam” (Wisdom is all Wealth).
-            </p>
-            <div className="w-1/6 p-2 btn btn-hover my-2">
-              <a
-                href="https://www.uom.lk"
-                className="text-sm rounded-lg"
-                target="_blank"
-              >
-                <div className="flex justify-center">
-                  <span className=" ms-1 text-center">Visit Website</span>
-                  <RightArrow className="ms-2 w-4" />
-                </div>
-              </a>
-            </div>
+        <div className="w-4/5 px-5">
+          <p className="text-justify leading-relaxed pe-5">
+            The University of Moratuwa—familiarly known as Mora—is Sri
+            Lanka&apos;s leading public technological university, situated in
+            Katubedda, Moratuwa, overlooking Bolgoda Lake . With roots dating
+            back to the Government Technical College (established in 1893), it
+            later became the Ceylon Technical College and Katubedda Campus of
+            the University of Ceylon in 1972, before gaining full university
+            status in 1978.Today, the university serves more than 11,000
+            students (approximately 9,000 undergraduates and 2,500
+            postgraduates), supported by 500 academic staff across multiple
+            faculties including Architecture, Engineering, Information
+            Technology, Graduate Studies, Business, and Medicine. It is
+            internationally recognized, accredited by the University Grants
+            Commission and affiliated with bodies such as the Association of
+            Commonwealth Universities, RIBA, and IET.The university offers
+            extensive academic, cultural, and recreational opportunities through
+            over 25 student clubs, organized sports (from cricket to badminton
+            and rowing), and facilities like gymnasiums and swimming pools .
+            Students have also earned global recognition, having excelled in
+            competitions like Google Summer of Code and Imagine Cup Sri
+            Lanka.Committed to pioneering education and research, the University
+            of Moratuwa continues to shape Sri Lanka&apos;s future leaders in
+            technology and innovation, guided by its enduring motto “Vidyayeva
+            Sarvadhanam” (Wisdom is all Wealth).
+          </p>
+          <div className="w-1/6 p-2 btn btn-hover my-2">
+            <a
+              href="https://www.uom.lk"
+              className="text-sm rounded-lg"
+              target="_blank"
+            >
+              <div className="flex justify-center">
+                <span className=" ms-1 text-center">Visit Website</span>
+                <RightArrow className="ms-2 w-4" />
+              </div>
+            </a>
           </div>
-
+        </div>
+      </SectionTopic>
+      <SectionTopic id="UOMacademic" heading="Acadamic">
+        <div className="flex">
+          <div className="w-5/6">
+            <table className="w-2/3">
+              <thead>
+                <tr>
+                  <th className="w-1/6">Year</th>
+                  <th className="w-1/3">Semester</th>
+                  <th className="w-1/6">GPA</th>
+                  <th className="w-1/3">Spetial Notes</th>
+                </tr>
+              </thead>
+              <tbody className="text-center ">
+                <tr>
+                  <td>2023</td>
+                  <td>Semester 1</td>
+                  <td>4.0</td>
+                  <td>Dean&apos;s List</td>
+                </tr>
+                <tr>
+                  <td>2023</td>
+                  <td>Semester 2</td>
+                  <td>*</td>
+                  <td>*</td>
+                </tr>
+                <tr>
+                  <td>2023</td>
+                  <td>Semester 3</td>
+                  <td>*</td>
+                  <td>*</td>
+                </tr>
+                <tr>
+                  <td>2023</td>
+                  <td>Semester 4</td>
+                  <td>*</td>
+                  <td>*</td>
+                </tr>
+                <tr>
+                  <td>2023</td>
+                  <td>Semester 5</td>
+                  <td>*</td>
+                  <td>*</td>
+                </tr>
+                <tr>
+                  <td>2023</td>
+                  <td>Semester 6</td>
+                  <td>*</td>
+                  <td>*</td>
+                </tr>
+                <tr>
+                  <td>2023</td>
+                  <td>Semester 7</td>
+                  <td>*</td>
+                  <td>*</td>
+                </tr>
+                <tr>
+                  <td>2023</td>
+                  <td>Semester 8</td>
+                  <td>*</td>
+                  <td>*</td>
+                </tr>
+              </tbody>
+            </table>
+            <p className="text-xs text-textSecondary mt-3 text-textPrimary-dark">
+              Note : &apos;*&apos; marks datails to be updated
+            </p>
+          </div>
           <Image
             src={CDNFetch("/images/be0393d2-2e99-4a22-82ee-4dacbfdc5bdd.jpg")}
             alt="University of Moratuwa"
@@ -59,76 +125,11 @@ const UOM = () => {
           />
         </div>
       </SectionTopic>
-      <SectionTopic id="UOMacademic" heading="Acadamic">
-        <table className="w-1/3">
-          <thead>
-            <tr>
-              <th className="w-1/6">Year</th>
-              <th className="w-1/3">Semester</th>
-              <th className="w-1/6">GPA</th>
-              <th className="w-1/3">Spetial Notes</th>
-            </tr>
-          </thead>
-          <tbody className="text-center">
-            <tr>
-              <td>2023</td>
-              <td>Semester 1</td>
-              <td>4.0</td>
-              <td>Dean&apos;s List</td>
-            </tr>
-            <tr>
-              <td>2023</td>
-              <td>Semester 2</td>
-              <td>*</td>
-              <td>*</td>
-            </tr>
-            <tr>
-              <td>2023</td>
-              <td>Semester 3</td>
-              <td>*</td>
-              <td>*</td>
-            </tr>
-            <tr>
-              <td>2023</td>
-              <td>Semester 4</td>
-              <td>*</td>
-              <td>*</td>
-            </tr>
-            <tr>
-              <td>2023</td>
-              <td>Semester 5</td>
-              <td>*</td>
-              <td>*</td>
-            </tr>
-            <tr>
-              <td>2023</td>
-              <td>Semester 6</td>
-              <td>*</td>
-              <td>*</td>
-            </tr>
-            <tr>
-              <td>2023</td>
-              <td>Semester 7</td>
-              <td>*</td>
-              <td>*</td>
-            </tr>
-            <tr>
-              <td>2023</td>
-              <td>Semester 8</td>
-              <td>*</td>
-              <td>*</td>
-            </tr>
-          </tbody>
-        </table>
-        <p className="text-xs text-textSecondary">
-          Note : &apos;*&apos; marks datails to be updated
-        </p>
-      </SectionTopic>
       <SectionTopic id="UOMprojects" heading="Extra Curricular">
         <ol className="list-decimal ms-10">
           <ListItem id="UOMRobogames" heading="IESL Robogames">
             <div className="w-5/6">
-              <div className=" text-justify leading-tight pe-5">
+              <div className=" text-justify leading-relaxed pe-5">
                 RoboGames is an inter-university robotics competition where
                 student teams design, build, and battle custom-built robots in
                 head-to-head matches. As a proud member of Team LYNX, I played a
@@ -177,7 +178,7 @@ const UOM = () => {
           <ListItem
             heading="ThermoBand Product Design"
             id="UOMThermoBand"
-            className="mt-2"
+            className="mt-2 leading-relaxed"
           >
             ThermoBand is a wearable real time temperature monitoring device
             developed as part of a team project. I led the project, designing

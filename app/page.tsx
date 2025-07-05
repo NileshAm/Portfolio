@@ -5,17 +5,17 @@ import Projects from "@comps/home/Projects/Projects";
 
 export default function Home() {
   return (
-    <main>
+    <main className="px-2">
       <div className="flex">
         <div className="w-2/3">
-          <div className="text-5xl p-6">
+          <div className="text-5xl p-6 px-10">
             Hi,
             <br /> I am{" "}
             <span className="text-highlight text-6xl font-bold font-mono shadow-lg">
               Nilesh Amarathunge
             </span>
           </div>
-          <div className="p-2 px-6 text-lg text-justify leading-tight">
+          <div className="p-2 px-10 text-lg text-justify leading-normal">
             Hi! I&apos;m Nilesh Amarathunge, a passionate engineering
             undergraduate currently studing in{" "}
             <strong className="text-highlight">
@@ -45,7 +45,7 @@ export default function Home() {
           width={500}
           height={500}
           alt="Picture of the author"
-          className="w-1/3 m-2 mt-4 rounded-full shadow-2xl blur-mask -z-10"
+          className="w-1/3 m-2 mt-4 me-10 rounded-full shadow-2xl blur-mask -z-10"
         />
       </div>
       <Education />

@@ -9,11 +9,10 @@ const Projects = () => {
       <div className="justify-center flex">
         <h1 className="text-4xl ms-5 font-bold">Projects</h1>
       </div>
-      <div className="flex">
+      <div className="flex justify-evenly">
         <HomeCard
           image="/images/f0c11ce6-d748-4db7-ba71-59ac5463216c.jpg"
           href="/projects/RoboGames-2025"
-          imgClassName="w-64 object-contain"
           className="leading-tight"
         >
           RoboGames is an inter-university robotics competition where student
@@ -29,12 +28,12 @@ const Projects = () => {
           store, providing a complete online platform for browsing and
           purchasing products.
         </HomeCard>
-        <div className="self-center ms-4 ">
+        <div className="self-center mx-4 w-1/12">
           <Link
             href={"/projects"}
-            className="flex w-1/3 border-4 rounded-full border-secondary p-2 hover:bg-secondary hover:text-textPrimary transition-all"
+            className="flex border-4 rounded-full border-secondary p-2 hover:bg-secondary hover:text-textPrimary transition-all"
           >
-            <RightArrow className="w-inherit" />
+            <RightArrow className="w-10" />
             <p className="text-center leading-tight">See More</p>
           </Link>
         </div>
