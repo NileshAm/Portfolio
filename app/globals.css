@@ -41,7 +41,7 @@ html {
 }
 
 .nav-item {
-  @apply hover:scale-125 transition-all;
+  @apply hover:scale-125 transition-all md:py-0 py-2;
 }
 
 .blur-mask {
