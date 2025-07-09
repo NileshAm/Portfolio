@@ -10,7 +10,7 @@ const page = () => {
       <div className="flex">
         <div className="ms-2 me-3">
           <h2 className="text-3xl mt-3 underline">Overview</h2>
-          <table className="mt-2 leading-relaxed mx-5">
+          <table className="mt-2 leading-relaxed md:mx-5">
             <thead>
               <tr>
                 <th className="w-1/5"></th>
@@ -91,13 +91,13 @@ const page = () => {
         <h2 className="text-3xl underline font-bold">
           What I Did in the ThermoBand Project
         </h2>
-        <div className="flex">
-          <ol className="list-decimal ms-7 mt-2 me-3 text-justify px-5 pe-10 leading-relaxed">
+        <div className="flex lg:flex-row flex-col leading-relaxed text-justify">
+          <ol className="list-decimal md:ms-7 mt-2 md:me-3 text-justify md:px-5 md:pe-10 ps-5 leading-relaxed">
             <li className="my-6">
               <strong className="text-lg text-highlight">
                 3D Mechanical Design
               </strong>
-              <ul className="list-disc ms-7">
+              <ul className="list-disc md:ms-7 ms-4">
                 <li>
                   Modeled a compact and ergonomic enclosure in SolidWorks,
                   considering component fit, durability, and user comfort.
@@ -108,7 +108,7 @@ const page = () => {
               <strong className="text-lg text-highlight">
                 Component & PCB Design
               </strong>
-              <ul className="list-disc ms-7">
+              <ul className="list-disc md:ms-7 ms-4">
                 <li>
                   Selected the ESP8266 microcontroller as the core, and sourced
                   peripherals for temperature sensing, battery charging, and
@@ -125,10 +125,10 @@ const page = () => {
               <strong className="text-lg text-highlight">
                 Manufacturing & Assembly
               </strong>
-              <ul className="list-disc ms-7">
+              <ul className="list-disc md:ms-7 ms-4">
                 <li>
                   Oversaw the fabrication process, including:
-                  <ul className="list-decimal ms-20">
+                  <ul className="list-decimal md:ms-20 ms-7">
                     <li>Soldering SMD component to the manufaactured PCB</li>
                     <li>Ensuring all the coomponents are within tolerances</li>
                   </ul>
@@ -145,7 +145,7 @@ const page = () => {
               <strong className="text-lg text-highlight">
                 Firmware Development
               </strong>
-              <ul className="list-disc ms-7">
+              <ul className="list-disc md:ms-7 ms-4">
                 <li>
                   Wrote complete firmware for the ESP8266, implementing Wi-Fi
                   communication to a remote server, periodic temperature
@@ -160,7 +160,7 @@ const page = () => {
               <strong className="text-lg text-highlight">
                 Backend Integration & Security
               </strong>
-              <ul className="ms-7 list-disc">
+              <ul className="list-disc md:ms-7 ms-4">
                 <li>
                   Contributed to an Express.js backend, adding secure user
                   authentication using JWT and integrating with Supabase for
@@ -171,13 +171,13 @@ const page = () => {
           </ol>
           <Viewer3D
             src="https://cdn.jsdelivr.net/gh/NileshAm/ThermoBand-EN1190/public/Assembly.glb"
-            className="w-1/2 h-max mx-auto my-5 p-3 bg-primary-light rounded-3xl"
+            className="lg:w-1/2 w-full h-max mx-auto my-5 p-3 bg-primary-light rounded-3xl"
           />
         </div>
       </div>
       <div className="m-3 mt-4">
         <h2 className="text-3xl underline font-bold">Conclution</h2>
-        <p className="mt-2 text-justify leading-loose px-5">
+        <p className="mt-2 text-justify leading-loose md:px-5">
           In the end, the ThermoBand turned out to be a fully working wearable
           device that could track body temperature and send updates to a remote
           server over Wi-Fi. I was involved in pretty much every part of the
