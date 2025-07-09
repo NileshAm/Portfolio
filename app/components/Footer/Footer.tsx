@@ -2,6 +2,9 @@ import LinkedIn from "@svgs/LinkedIn";
 import Github from "@svgs/Github";
 import Mail from "@svgs/Mail";
 import Link from "next/link";
+import Instagram from "@svgs/Instagram";
+import Facebook from "@svgs/Facebook";
+import LinkSVG from "@svgs/LinkSVG";
 
 const Footer = () => {
   return (
@@ -73,25 +76,37 @@ const Footer = () => {
           <div>
             <Link
               href={"/education"}
-              className="hover:text-highlight hover:underline transition-all"
+              className="flex hover:text-highlight hover:underline transition-all"
             >
-              Education
+              <LinkSVG className="w-4" />
+              <span className="ps-4 self-center">Education</span>
             </Link>
           </div>
           <div>
             <Link
               href={"/projects"}
-              className="hover:text-highlight hover:underline transition-all"
+              className="flex hover:text-highlight hover:underline transition-all"
             >
-              Projects
+              <LinkSVG className="w-4" />
+              <span className="ps-4 self-center">Projects</span>
+            </Link>
+          </div>
+          <div>
+            <Link
+              href={"/cv"}
+              className="flex hover:text-highlight hover:underline transition-all"
+            >
+              <LinkSVG className="w-4" />
+              <span className="ps-4 self-center">CV</span>
             </Link>
           </div>
           <div>
             <Link
               href={"/about"}
-              className="hover:text-highlight hover:underline transition-all"
+              className="flex hover:text-highlight hover:underline transition-all"
             >
-              About me
+              <LinkSVG className="w-4" />
+              <span className="ps-4 self-center">About Me</span>
             </Link>
           </div>
         </div>
