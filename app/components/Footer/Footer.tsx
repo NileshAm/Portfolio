@@ -9,9 +9,9 @@ import LinkSVG from "@svgs/LinkSVG";
 const Footer = () => {
   return (
     <footer className="flex flex-wrap bg-primary-dark text-textSecondary text-center p-5 mt-16 justify-evenly">
-      <div className="w-1/4">
+      <div className="w-full sm:w-1/2 md:w-1/4">
         <span className="text-xl">Contacts</span>
-        <div className="flex flex-col justify-center gap-2 text-sm">
+        <div className="md:ms-0 sm:ms-16 ms-8 flex flex-col justify-center gap-2 text-sm">
           <a
             href="https://github.com/NileshAm"
             target="_blank"
@@ -41,9 +41,9 @@ const Footer = () => {
           </a>
         </div>
       </div>
-      <div className="w-1/4 text-center ">
+      <div className="w-full sm:w-1/2 md:w-1/4 sm:mt-0 mt-10 text-center ">
         <span className="text-xl">Social media</span>
-        <div className="flex flex-col justify-center gap-2 text-sm pt-1">
+        <div className="md:ms-0 sm:ms-16 ms-8 flex flex-col justify-center gap-2 text-sm pt-1">
           <div>
             <Link
               href={
@@ -70,9 +70,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="w-1/4">
+      <div className="w-full sm:w-1/2 md:w-1/4 sm:mt-0 mt-10">
         <span className="text-xl">Links</span>
-        <div className="flex flex-col justify-center gap-2 text-sm pt-1">
+        <div className="md:ms-0 sm:ms-16 ms-8 flex flex-col justify-center gap-2 text-sm pt-1">
           <div>
             <Link
               href={"/education"}
@@ -111,7 +111,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="w-full">
+      <div className="w-full mt-2">
         <p className="text-sm ">
           © 2025 Nilesh Amarathunge. All rights reserved.
         </p>
