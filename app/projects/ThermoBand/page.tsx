@@ -1,7 +1,7 @@
 import Github from "@svgs/Github";
 import Viewer3D from "@comps/Viewer3D/Viewer3D";
-// import Image from 'next/image';
-// import { CDNFetch } from "@/app/utils/imageFetch";
+import Image from "next/image";
+import { CDNFetch } from "@/app/utils/imageFetch";
 
 const page = () => {
   return (
@@ -197,21 +197,20 @@ const page = () => {
       <div className="m-3 mt-4">
         <h2 className="text-3xl underline font-bold">Gallery</h2>
         <div className="flex flex-wrap justify-evenly mt-4">
-          {/* <Image
-            src={CDNFetch("/images/9f540a0e-9302-4341-aeda-7d520acef92c.jpg")}
-            alt="Robogames 2025"
-            width={500}
-            height={500}
+          <Image
+            src={CDNFetch("/images/c5fbbc8b-4c4d-4ec9-ab18-ef8c424c56e4.png")}
+            alt="ThermoBand image"
+            width={600}
+            height={400}
             className="mx-2 my-2 rounded-lg"
           />
           <Image
-            src={CDNFetch("/images/e1a06a91-7854-4188-a68a-3fb596bc37df.jpg")}
-            alt="Robogames 2025"
-            width={750}
-            height={500}
-            className="mx-2 my-2 rounded-lg"
-          /> */}
-          <p>Images will be added sooon......</p>
+            src={CDNFetch("/images/2559919d-8ba5-4e3c-ae3e-aae3bef21372.png")}
+            alt="ThermoBand image"
+            width={400}
+            height={400}
+            className="mx-2 my-2 rounded-lg "
+          />
         </div>
       </div>
     </main>
