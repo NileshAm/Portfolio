@@ -3,10 +3,10 @@ import { CDNFetch } from "@utils/imageFetch";
 const page = () => {
   return (
     <main className="m-4 mx-5">
-      <div className="flex">
-        <div className="w-5/6">
+      <div className="flex md:flex-row flex-col items-center justify-between">
+        <div className="md:w-5/6">
           <h1 className="text-4xl text-highlight">About Me</h1>
-          <p className="text-lg mt-2 text-justify px-5 leading-relaxed">
+          <p className="text-lg mt-2 text-justify md:px-5 px-2 leading-relaxed">
             Hello! I&apos;m{" "}
             <span className="text-highlight">A.M. Nilesh Amarathunge</span>, a
             tech enthusiast and engineering undergraduate with a strong passion
@@ -16,7 +16,7 @@ const page = () => {
           </p>
           <hr className="my-6 " />
           <h2 className="text-3xl text-highlight ">My Academic Journey</h2>{" "}
-          <p className="text-justify mt-2 px-5 leading-relaxed">
+          <p className="text-justify mt-2 md:px-5 px-2 leading-relaxed">
             My educational foundation was laid at Maliyadeva College,
             Kurunegala, where I actively balanced academics with innovation and
             extracurricular leadership. I sat for the GCE Ordinary Level
@@ -41,18 +41,18 @@ const page = () => {
           width={300}
           height={300}
           alt="Picture of the author"
-          className="w-1/3 m-5 mt-4 rounded-full shadow-2xl blur-mask -z-10"
+          className="md:w-1/3 m-5 mt-4 rounded-full shadow-2xl blur-mask -z-10 h-fit"
         />
       </div>
       <hr className="my-6" />
       <h2 className="text-3xl text-highlight">
         Technical Projects and Experience
       </h2>{" "}
-      <p className="text-justify mt-2 mx-5 leading-relaxed">
+      <p className="text-justify mt-2 md:mx-5 leading-relaxed">
         I&apos;ve had the opportunity to work on diverse technical projects,
         combining both hardware and software development.
       </p>
-      <ul className="list-disc ms-14 mt-2 leading-relaxed text-justify">
+      <ul className="list-disc md:ms-14 ms-7 mt-2 leading-relaxed text-justify">
         <li className="mt-4">
           Robogames (Team LYNX): Designed and fabricated the 3D CAD model of a
           battle robot and supported component integration. Our team competed
@@ -72,7 +72,7 @@ const page = () => {
       </ul>
       <hr className="my-6" />
       <h2 className="text-3xl text-highlight">Awards & Recognition</h2>
-      <ul className="list-disc ms-8 mt-2">
+      <ul className="list-disc md:ms-14 ms-7 mt-2 leading-relaxed text-justify">
         <li className="mt-4">
           Robotic Minds Competition 2015 — 1st Place (National level)
         </li>
@@ -86,10 +86,10 @@ const page = () => {
         </li>
       </ul>
       <hr className="my-6" />
-      <h2 className="text-3xl text-highlight">
+      <h2 className="text-3xl text-highlight ">
         Leadership & Extracurricular Activities
       </h2>
-      <ul className="list-disc ms-8 mt-2">
+      <ul className="list-disc md:ms-14 ms-7 mt-2 leading-relaxed text-justify">
         <li className="mt-4">
           Vice Secretary, Philatelic Society - Maliyadeva College
         </li>
@@ -107,7 +107,7 @@ const page = () => {
       </ul>
       <hr className="my-6" />
       <h2 className="text-3xl text-highlight">Looking Ahead</h2>
-      <p className="text-justify mt-2 leading-loose px-5">
+      <p className="text-justify mt-2 leading-loose md:px-5 px-2">
         I&apos;m deeply committed to bridging software and hardware through
         projects that improve lives and push technical boundaries. My goal is to
         become a multidisciplinary engineer, leveraging embedded systems,
