@@ -5,16 +5,18 @@ const TopicList = ({
   id,
   heading,
   className = "",
+  childrenClass = "",
 }: {
   children: ReactNode;
   id: string;
   heading: string;
   className?: string;
+  childrenClass?: string;
 }) => {
   return (
     <li id={id} className={"scroll-mt-16 " + className}>
       <h3 className="text-lg underline">{heading}</h3>
-      <div className="flex">{children}</div>
+      <div className={"flex " + childrenClass}>{children}</div>
     </li>
   );
 };

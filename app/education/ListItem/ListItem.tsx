@@ -10,7 +10,7 @@ const ListItem = ({
   children?: ReactNode;
 }) => {
   return (
-    <li>
+    <li className="md:text-sm text-xs">
       <a href={href}>{heading}</a>
       {children}
     </li>

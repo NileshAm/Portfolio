@@ -9,7 +9,7 @@ const Education = () => {
       <div className="justify-center flex">
         <h1 className="text-4xl ms-5 font-bold">Education</h1>
       </div>
-      <div className="flex justify-evenly">
+      <div className="flex justify-evenly flex-col md:flex-row">
         <HomeCard
           image="/images/56b8ffc1-e90d-4f18-822d-3ca6f2a376cc.jpg"
           href="/education#Maliyadeva"
@@ -28,10 +28,10 @@ const Education = () => {
           “Wisdom is all Wealth” reflects its focus on academic and technical
           excellence.
         </HomeCard>
-        <div className="self-center mx-4 w-1/12">
+        <div className="self-center mx-4 md:w-1/12 w-1/2">
           <Link
             href={"/education"}
-            className="flex border-4 rounded-full border-secondary p-2 hover:bg-secondary hover:text-textPrimary transition-all"
+            className="flex justify-evenly items-center border-4 rounded-full border-secondary p-2 hover:bg-secondary hover:text-textPrimary transition-all"
           >
             <RightArrow className="w-10" />
             <p className="text-center leading-tight">See More</p>
