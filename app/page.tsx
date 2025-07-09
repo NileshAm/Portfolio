@@ -6,16 +6,16 @@ import Projects from "@comps/home/Projects/Projects";
 export default function Home() {
   return (
     <main className="px-2">
-      <div className="flex">
-        <div className="w-2/3">
-          <div className="text-5xl p-6 px-10">
+      <div className="flex flex-col sm:flex-row">
+        <div className="sm:w-2/3 w-full">
+          <div className="sm:text-5xl text-3xl sm:px-10 px-3 w-1/2 sm:m-0 mt-7 leading-relaxed sm sm:leading-snug">
             Hi,
-            <br /> I am{" "}
-            <span className="text-highlight text-6xl font-bold font-mono shadow-lg">
+            <br className="" /> I am{" "}
+            <span className="text-highlight sm:text-6xl text-4xl font-bold font-mono shadow-lg">
               Nilesh Amarathunge
             </span>
           </div>
-          <div className="p-2 px-10 text-lg text-justify leading-normal">
+          <div className="p-2 sm:px-10 px-3 text-lg text-justify sm:leading-normal leading-tight ">
             Hi! I&apos;m Nilesh Amarathunge, a passionate engineering
             undergraduate currently studing in{" "}
             <strong className="text-highlight">
@@ -45,7 +45,7 @@ export default function Home() {
           width={500}
           height={500}
           alt="Picture of the author"
-          className="w-1/3 m-2 mt-4 me-10 rounded-full shadow-2xl blur-mask -z-10"
+          className="sm:w-1/3 w-1/2 sm:m-2 h-fit mt-4 sm:me-10 rounded-full shadow-2xl blur-mask -z-10 absolute sm:static top-10 right-0 sm:top-0"
         />
       </div>
       <Education />
