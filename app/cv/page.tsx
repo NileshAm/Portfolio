@@ -5,7 +5,7 @@ const page = () => {
     <div className="flex justify-center">
       <iframe
         src={CDNFetch("/pdfs/Nilesh_Amarathunge-CV.pdf")}
-        className="w-2/3 h-[100vh] rounded-lg mt-2"
+        className="md:w-2/3 w-full h-[100vh] rounded-lg mt-2"
         title="Nilesh Amarathunge CV"
       ></iframe>
     </div>
