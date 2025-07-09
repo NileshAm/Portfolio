@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Sections from "./Sections/Sections";
 import SectionTopic from "./SectionTopic/SectionTopic";
-import ListItem from "./TopicList/TopicList";
+import TopicList from "./TopicList/TopicList";
 import RightArrow from "@svgs/RightArrow";
 import { CDNFetch } from "@utils/imageFetch";
 
@@ -9,8 +9,8 @@ const UOM = () => {
   return (
     <Sections id="UOM" heading="University of Moratuwa">
       <SectionTopic id="UOMinfo" heading="Info" className="">
-        <div className="w-4/5 px-5">
-          <p className="text-justify leading-relaxed pe-5">
+        <div className="md:w-4/5 w-full md:px-5 px-2">
+          <p className="text-justify leading-relaxed md:pe-5">
             The University of Moratuwa—familiarly known as Mora—is Sri
             Lanka&apos;s leading public technological university, situated in
             Katubedda, Moratuwa, overlooking Bolgoda Lake . With roots dating
@@ -35,7 +35,7 @@ const UOM = () => {
             technology and innovation, guided by its enduring motto “Vidyayeva
             Sarvadhanam” (Wisdom is all Wealth).
           </p>
-          <div className="w-1/6 p-2 btn btn-hover my-2">
+          <div className="md:w-1/6 w-1/2 p-2 btn btn-hover my-2">
             <a
               href="https://www.uom.lk"
               className="text-sm rounded-lg"
@@ -50,9 +50,9 @@ const UOM = () => {
         </div>
       </SectionTopic>
       <SectionTopic id="UOMacademic" heading="Acadamic">
-        <div className="flex">
-          <div className="w-5/6">
-            <table className="w-2/3">
+        <div className="flex flex-col md:flex-row">
+          <div className="md:w-5/6">
+            <table className="md:w-2/3 w-full">
               <thead>
                 <tr>
                   <th className="w-1/6">Year</th>
@@ -126,16 +126,20 @@ const UOM = () => {
         </div>
       </SectionTopic>
       <SectionTopic id="UOMprojects" heading="Extra Curricular">
-        <ol className="list-decimal ms-10">
-          <ListItem id="UOMRobogames" heading="IESL Robogames">
-            <div className="w-5/6">
-              <div className=" text-justify leading-relaxed pe-5">
+        <ol className="list-decimal md:ms-10 ms-6">
+          <TopicList
+            id="UOMRobogames"
+            heading="IESL Robogames"
+            childrenClass="flex flex-col md:flex-row md:ms-0 -ms-6"
+          >
+            <div className="md:w-5/6">
+              <div className=" text-justify leading-relaxed md:pe-5 md:px-0 px-2 ">
                 RoboGames is an inter-university robotics competition where
                 student teams design, build, and battle custom-built robots in
                 head-to-head matches. As a proud member of Team LYNX, I played a
                 leading role in bringing our battle bot to life.
               </div>
-              <div className="flex justify-evenly">
+              <div className="flex justify-evenly flex-wrap mt-2 pe-5 md:pe-0">
                 <Image
                   src={CDNFetch(
                     "/images/9f540a0e-9302-4341-aeda-7d520acef92c.jpg"
@@ -143,7 +147,7 @@ const UOM = () => {
                   alt="Robogames Image"
                   width={350}
                   height={(350 / 9) * 16}
-                  className="rounded-lg mt-3 w-auto ms-3"
+                  className="rounded-lg mt-3 md:w-auto w-full ms-3 md:me-0 me-10"
                 />
                 <Image
                   src={CDNFetch(
@@ -152,10 +156,10 @@ const UOM = () => {
                   alt="Robogames Image"
                   width={500}
                   height={350}
-                  className="rounded-lg mt-3 w-auto ms-3"
+                  className="rounded-lg mt-3 md:w-auto w-full ms-3 md:me-0 me-10"
                 />
               </div>
-              <div className="w-36 p-2 btn btn-hover my-5">
+              <div className="md:w-36 w-full p-2 btn btn-hover my-5">
                 <a
                   href="/projects/RoboGames-2025"
                   className="text-sm rounded-lg"
@@ -172,21 +176,23 @@ const UOM = () => {
               alt="Robogames Image"
               width={350}
               height={(350 / 9) * 16}
-              className="rounded-lg mt-3 w-auto ms-3"
+              className="rounded-lg mt-3 w-auto ms-3 pe-2 md:pe-0 h-fit"
             />
-          </ListItem>
-          <ListItem
+          </TopicList>
+          <TopicList
             heading="ThermoBand Product Design"
             id="UOMThermoBand"
-            className="mt-2 leading-relaxed"
+            className="mt-2 leading-relaxed text-justify"
           >
-            ThermoBand is a wearable real time temperature monitoring device
-            developed as part of a team project. I led the project, designing
-            the 3D-printed enclosure, selecting all necessary components, and
-            writing the complete microcontroller code. The ThermoBand captures
-            temperature data and presents it in real time, highlighting both
-            engineering integration and embedded system development.
-          </ListItem>
+            <p className="md:ms-0 -ms-6 md:px-0 px-2">
+              ThermoBand is a wearable real time temperature monitoring device
+              developed as part of a team project. I led the project, designing
+              the 3D-printed enclosure, selecting all necessary components, and
+              writing the complete microcontroller code. The ThermoBand captures
+              temperature data and presents it in real time, highlighting both
+              engineering integration and embedded system development.
+            </p>
+          </TopicList>
           <div className="w-36 p-2 btn btn-hover my-5">
             <a href="/projects/ThermoBand" className="text-sm rounded-lg">
               <div className="flex justify-center">

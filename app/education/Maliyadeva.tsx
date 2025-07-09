@@ -8,9 +8,9 @@ const Maliyadeva = () => {
   return (
     <Sections id="Maliyadeva" heading="Maliyadeva College" className="mt-10">
       <SectionTopic id="MaliyadevaInfo" heading="Info">
-        <div className="flex">
-          <div className="w-2/3 px-5">
-            <p className="text-justify leading-relaxed pe-5">
+        <div className="flex md:flex-row flex-col">
+          <div className="md:w-2/3 md:px-5">
+            <p className="text-justify leading-relaxed md:pe-5 px-2">
               Maliyadeva College, founded on September 30, 1888 by the Buddhist
               Theosophical Society led by Colonel Henry Steel Olcott, is a
               prestigious national school in Kurunegala, Sri Lanka . Named after
@@ -41,7 +41,7 @@ const Maliyadeva = () => {
               including North Western Provincial Chief Minister Athula
               Wijesinghe (2002-2013)
             </p>
-            <div className="w-1/6 p-2 btn btn-hover my-2">
+            <div className="md:w-1/6 p-2 btn btn-hover my-2">
               <a
                 href="https://www.maliyadeva.lk"
                 className="text-sm rounded-lg"
@@ -59,7 +59,7 @@ const Maliyadeva = () => {
             alt="Maliyadeva College"
             width={500}
             height={(500 / 4) * 3}
-            className="rounded-lg mt-3 w-1/3"
+            className="rounded-lg mt-3 md:w-1/3 h-fit"
           />
         </div>
       </SectionTopic>
@@ -68,7 +68,7 @@ const Maliyadeva = () => {
           <p className="text-xl font-semibold">
             G.C.E. Advanced Level (A/L) - 2023
           </p>
-          <table className="w-1/2 ms-5">
+          <table className="md:w-1/2 ms-5">
             <thead>
               <tr>
                 <th className="w-1/4"></th>
@@ -81,7 +81,7 @@ const Maliyadeva = () => {
                 <td> : Physical Science</td>
               </tr>
               <tr>
-                <td className="font-semibold py-1">Results</td>
+                <td className="font-semibold py-1 text-justify">Results</td>
                 <td>
                   : 3A Passes in Combined Mathematics, Physics, and Chemistry
                 </td>

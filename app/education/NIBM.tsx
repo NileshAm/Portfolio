@@ -13,9 +13,9 @@ const NIBM = () => {
       className="mt-10"
     >
       <SectionTopic id="NIBMinfo" heading="Info">
-        <div className="flex">
-          <div className="w-4/5 px-5">
-            <p className="text-justify pe-5 leading-relaxed">
+        <div className="flex md:flex-row flex-col">
+          <div className="md:w-4/5 w-full md:px-5">
+            <p className="text-justify md:pe-5 md:px-0 px-2 leading-relaxed">
               The National Institute of Business Management (NIBM) was founded
               in 1968 under the Ministry of Industries and Scientific Affairs,
               in partnership with the UNDP and ILO, to spearhead business and
@@ -53,7 +53,7 @@ const NIBM = () => {
               education, online learning via its Digital Campus, and a
               centralized job-portal service .
             </p>
-            <div className="w-1/6 p-2 btn btn-hover my-2">
+            <div className="md:w-1/6 p-2 btn btn-hover md:my-2 my-5">
               <a
                 href="https://www.nibm.lk"
                 className="text-sm rounded-lg"
@@ -68,32 +68,36 @@ const NIBM = () => {
           </div>
           <Image
             src={CDNFetch("/images/db163e20-0537-47a2-994b-b4ca675881e3.jpg")}
-            alt="NIBM Logo"
-            className="w-1/5 rounded-lg"
+            alt="NIBM image"
+            className="md:w-1/5 w-full rounded-lg h-fit"
             width={200}
             height={400}
           />
         </div>
       </SectionTopic>
       <SectionTopic id="NIBMacademic" heading="Academic">
-        <p>
+        <p className="text-justify">
           Completed Diploma in Software Enginnering, with a
           <strong> Distiction pass</strong> of a credit score of{" "}
           <strong>3.911</strong>.
         </p>
       </SectionTopic>
       <SectionTopic id="NIBMprojects" heading="Projects">
-        <ol className="list-decimal ms-10">
-          <TopicList id="NIBMDMobile" heading="D-Mobile Web Application">
-            <div className="w-1/2">
-              <p className="leading-relaxed pe-10 text-justify">
+        <ol className="list-decimal md:ms-10 ms-6">
+          <TopicList
+            id="NIBMDMobile"
+            heading="D-Mobile Web Application"
+            childrenClass="md:flex-row flex-col"
+          >
+            <div className="md:w-1/2">
+              <p className="leading-relaxed md:pe-10 text-justify md:ms-0 -ms-6 md:px-0 px-2">
                 Developed a full-stack E-commerce web application for D-Mobile,
                 an electronics retailer, as part of the NIBM final project. The
                 system supports product browsing, purchasing, inventory
                 management, and online payments, with secure user authentication
                 and data handling.
               </p>
-              <div className="w-36 p-2 btn btn-hover my-5">
+              <div className="md:w-36 -ms-6 md:ms-0 p-2 btn btn-hover my-5">
                 <a
                   href="/projects/DMobile-WebApp"
                   className="text-sm rounded-lg"
@@ -107,7 +111,7 @@ const NIBM = () => {
             </div>
             <video
               controls
-              className="rounded-lg w-1/2 -z-10"
+              className="rounded-lg md:w-1/2 -z-10 -ms-3 md:ms-0"
               autoPlay
               muted
               loop
