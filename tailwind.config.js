@@ -4,30 +4,49 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        background: "#0a0a0a", // Deep black/gray
+        foreground: "#f8fafc", // Off-white
         primary: {
-          DEFAULT: "#111344",
-          dark: "#0a0b26",
-          light: "#202380",
+          DEFAULT: "#3b82f6", // Bright Blue
+          dark: "#1d4ed8",
+          light: "#60a5fa",
         },
         secondary: {
-          DEFAULT: "#52154e",
-          dark: "#370837",
-          light: "#833775",
+          DEFAULT: "#a855f7", // Violet
+          dark: "#9333ea",
+          light: "#c084fc",
+        },
+        accent: {
+          DEFAULT: "#06b6d4", // Cyan
+          glow: "#22d3ee",
         },
         highlight: {
-          DEFAULT: "#f9cff2",
-          dark: "#b29bb5", // dusty rose
-          light: "#ffe5fb", // pale pink
+          DEFAULT: "#d946ef", // Neon Fuchsia
+          dark: "#c026d3",
+          light: "#e879f9",
         },
-        textPrimary: {
-          DEFAULT: "#efe9e7",
-          dark: "#cfc7c3", // softer, muted white
-          light: "#ffffff", // pure white
+        surface: {
+          DEFAULT: "#171717", // Slightly lighter black for cards
+          hover: "#262626",
         },
-        textSecondary: {
-          DEFAULT: "#dae0f2",
-          dark: "#a3a8be", // steely muted blue
-          light: "#f2f5ff", // icy pastel blue
+        textPrimary: "#f8fafc",
+        textSecondary: "#94a3b8", // Slate 400
+      },
+      fontFamily: {
+        sans: ['var(--font-inter)', 'sans-serif'],
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.5s ease-out',
+        'slide-up': 'slideUp 0.5s ease-out',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(20px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
         },
       },
     },

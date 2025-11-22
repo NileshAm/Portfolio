@@ -5,44 +5,47 @@ const page = () => {
     <main className="m-4 mx-5">
       <div className="flex md:flex-row flex-col items-center justify-between">
         <div className="md:w-5/6">
-          <h1 className="text-4xl text-highlight">About Me</h1>
-          <p className="text-lg mt-2 text-justify md:px-5 px-2 leading-relaxed">
+          <h1 className="text-4xl text-highlight font-bold">About Me</h1>
+          <p className="text-lg mt-2 text-justify md:px-5 px-2 leading-relaxed text-textSecondary">
             Hello! I&apos;m{" "}
-            <span className="text-highlight">A.M. Nilesh Amarathunge</span>, a
+            <span className="text-accent font-bold">A.M. Nilesh Amarathunge</span>, a
             tech enthusiast and engineering undergraduate with a strong passion
             for robotics, machine learning, and software development. My journey
             in technology began long before university, driven by curiosity,
             hands-on projects, and a desire to build meaningful solutions.
           </p>
-          <hr className="my-6 " />
-          <h2 className="text-3xl text-highlight ">My Academic Journey</h2>{" "}
-          <p className="text-justify mt-2 md:px-5 px-2 leading-relaxed">
+          <hr className="my-6 border-white/10" />
+          <h2 className="text-3xl text-highlight font-semibold">My Academic Journey</h2>{" "}
+          <p className="text-justify mt-2 md:px-5 px-2 leading-relaxed text-textSecondary">
             My educational foundation was laid at Maliyadeva College,
             Kurunegala, where I actively balanced academics with innovation and
             extracurricular leadership. I sat for the GCE Ordinary Level
-            Examination achieving 8 A passes and 1 C, and continued into the
-            Advanced Level physical science stream, securing straight A passes
+            Examination achieving <span className="text-accent font-bold">8 A passes and 1 C</span>, and continued into the
+            Advanced Level physical science stream, securing <span className="text-accent font-bold">straight A passes</span>
             in Combined Mathematics, Physics, and Chemistry, along with an A for
             General English. This placed me with a commendable Z-score of 2.2132
             and a rank of 599 island-wide, enabling entry into one of the most
             prestigious engineering programs in the country. I further enriched
             my academic portfolio by completing a Diploma in Software
             Engineering at NIBM, Kurunegala, where I graduated with a
-            Distinction (GPA: 3.911). This program helped me master core
+            <span className="text-accent font-bold"> Distinction (GPA: 3.911)</span>. This program helped me master core
             programming languages and tools that I now use every day. Currently,
             I am an undergraduate at the University of Moratuwa, Faculty of
             Engineering, studying Electronics and Telecommunication Engineering.
-            I was honored to be placed on the Dean&apos;s List in my very first
-            semester with a perfect SGPA of 4.00.
+            I was honored to be placed on the <span className="text-accent font-bold">Dean&apos;s List</span> in my very first
+            semester with a perfect <span className="text-accent font-bold">SGPA of 4.00</span>.
           </p>
         </div>
-        <Image
-          src={CDNFetch("/images/profile-photo.jpg")}
-          width={300}
-          height={300}
-          alt="Picture of the author"
-          className="md:w-1/3 m-5 mt-4 rounded-full shadow-2xl blur-mask -z-10 h-fit"
-        />
+        <div className="relative md:w-1/3 m-5 mt-4 h-fit flex justify-center">
+           <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full blur-3xl opacity-30 animate-pulse transform scale-90"></div>
+           <Image
+            src={CDNFetch("/images/profile-photo.jpg")}
+            width={300}
+            height={300}
+            alt="Picture of the author"
+            className="rounded-full shadow-2xl relative z-10 border-4 border-white/10"
+          />
+        </div>
       </div>
       <hr className="my-6" />
       <h2 className="text-3xl text-highlight">

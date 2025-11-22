@@ -3,89 +3,74 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --primary: #111344;
-  --secondary: #52154e;
-  --highlight: #f9cff2;
-  --textPrimary: #efe9e7;
-  --textSecondary: #dae0f2;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: var(--primary);
-    --foreground: var(--textPrimary);
-  }
+  --background: #0a0a0a;
+  --foreground: #f8fafc;
 }
 
 body {
   background: var(--background);
-  color: var(--textPrimary);
-  font-family: monospace, Arial, Helvetica, sans-serif;
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-.nav-link {
-  @apply text-textPrimary font-bold text-xl hover:text-textSecondary transition-colors;
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
 }
 
-.nav-item {
-  @apply hover:scale-125 transition-all md:py-0 py-2;
+::-webkit-scrollbar-track {
+  background: var(--background);
 }
 
-.blur-mask {
-  -webkit-mask-image: radial-gradient(
-    circle,
-    var(--primary) 65%,
-    transparent 70%
-  );
-  mask-image: radial-gradient(circle, var(--primary) 65%, transparent 70%);
-  mask-composite: intersect;
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
 }
 
-.w-1\/2-5 {
-  width: 40%;
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
-.w-inherit {
-  width: inherit;
+/* Utility classes for glassmorphism */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.scale-102 {
-  --tw-scale-x: 1.02;
-  --tw-scale-y: 1.02;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.glass-nav {
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.hover\:scale-102:hover {
-  --tw-scale-x: 1.02;
-  --tw-scale-y: 1.02;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y))
-    rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y))
-    scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+/* Text Gradients */
+.text-gradient {
+  background: linear-gradient(to right, #3b82f6, #8b5cf6, #06b6d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.btn {
-  @apply bg-secondary text-textPrimary font-bold p-2 rounded-lg;
+.text-gradient-hover:hover {
+  background: linear-gradient(to right, #60a5fa, #a78bfa, #22d3ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-.btn-hover {
-  @apply hover:bg-highlight hover:text-secondary transition-all hover:scale-105;
-}
+@layer components {
+  .btn-hover {
+    @apply hover:bg-highlight hover:text-secondary transition-all hover:scale-105;
+  }
 
-.project-title {
-  @apply text-5xl my-5 ms-2 text-center;
+  .project-title {
+    @apply text-5xl my-5 ms-2 text-center;
+  }
 }

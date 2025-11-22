@@ -5,51 +5,55 @@ import Projects from "@comps/home/Projects/Projects";
 
 export default function Home() {
   return (
-    <main className="px-2">
-      <div className="flex flex-col sm:flex-row">
-        <div className="sm:w-2/3 w-full">
-          <div className="sm:text-5xl text-3xl sm:px-10 px-3 w-1/2 sm:m-0 mt-7 leading-relaxed sm sm:leading-snug">
-            Hi,
-            <br className="" /> I am{" "}
-            <span className="text-highlight sm:text-6xl text-4xl font-bold font-mono shadow-lg">
-              Nilesh Amarathunge
-            </span>
-          </div>
-          <div className="p-2 sm:px-10 px-3 text-lg text-justify sm:leading-normal leading-tight ">
-            Hi! I&apos;m Nilesh Amarathunge, a passionate engineering
-            undergraduate currently studing in{" "}
-            <strong className="text-highlight">
-              University of Moratuwa, Sri Lanka
-            </strong>
-            . I specialize in software development, embedded systems, and
-            robotics, and I&apos;m deeply committed to building innovative and
-            meaningful tech solutions.
-            <br />
-            <br />
-            My current focus is on developing full-stack web applications,
-            experimenting with Internet of Things (IoT) systems, and
-            continuously refining my skills{" "}
-            <strong className="text-highlight">electronics</strong>
-            <br />
-            <br />
-            Looking ahead, I aspire to become a highly skilled engineer and
-            researcher in the fields of AI and autonomous systems. I&apos;m
-            driven by curiosity, powered by learning, and ready to take on
-            opportunities that challenge and grow me — whether that&apos;s
-            collaborating on impactful projects or exploring new technological
-            frontiers.
+    <main className="min-h-screen flex flex-col justify-center">
+      {/* Hero Section */}
+      <section className="container mx-auto px-4 pt-0 pb-10 flex flex-col-reverse md:flex-row items-center justify-center min-h-[80vh] gap-10">
+        <div className="md:w-1/2 space-y-6 animate-slide-up text-center md:text-left flex flex-col justify-center md:ps-10">
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+            Hi, I&apos;m <br />
+            <span className="text-gradient">Nilesh Amarathunge</span>
+          </h1>
+          <p className="text-lg md:text-xl text-textSecondary leading-relaxed max-w-lg mx-auto md:mx-0">
+            A passionate engineering undergraduate at the{" "}
+            <span className="text-accent">University of Moratuwa</span>. I
+            specialize in software development, embedded systems, and robotics,
+            building innovative solutions for the future.
+          </p>
+          <div className="flex gap-4 pt-4 justify-center md:justify-start">
+            <a
+              href="/projects"
+              className="px-6 py-3 bg-primary hover:bg-primary-dark text-white rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg shadow-primary/25"
+            >
+              View Work
+            </a>
+            <a
+              href="#contact"
+              className="px-6 py-3 border border-white/20 hover:bg-white/10 text-white rounded-full font-semibold transition-all"
+            >
+              Contact Me
+            </a>
           </div>
         </div>
-        <Image
-          src={CDNFetch("/images/profile-photo.jpg")}
-          width={500}
-          height={500}
-          alt="Picture of the author"
-          className="sm:w-1/3 w-1/2 sm:m-2 h-fit mt-4 sm:me-10 rounded-full shadow-2xl blur-mask -z-10 absolute sm:static top-10 right-0 sm:top-0"
-        />
+
+        <div className="md:w-1/2 flex justify-center items-center relative">
+          <div className="relative w-64 h-64 md:w-96 md:h-96">
+            <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full blur-3xl opacity-30 animate-pulse"></div>
+            <Image
+              src={CDNFetch("/images/profile-photo.jpg")}
+              fill
+              alt="Nilesh Amarathunge"
+              className="object-cover rounded-full border-4 border-white/10 shadow-2xl relative z-10"
+              priority
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Content Sections */}
+      <div className="space-y-32 pb-20">
+        <Education />
+        <Projects />
       </div>
-      <Education />
-      <Projects />
     </main>
   );
 }

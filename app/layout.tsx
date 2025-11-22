@@ -1,23 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@comps/NavBar/NavBar";
+import NavBar from "@comps/NavBar/NavBar";
 import Footer from "@comps/Footer/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio site of Nilesh Amarathunge",
+  title: "Nilesh Amarathunge | Portfolio",
   description:
-    "This website is a portfolio site of Nilesh Amarathunge, showcasing his work and skills.",
+    "Portfolio of Nilesh Amarathunge, a software engineer and robotics enthusiast.",
 };
 
 export default function RootLayout({
@@ -26,11 +21,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${inter.variable} font-sans antialiased bg-background text-foreground overflow-x-hidden pt-24 min-h-screen`}
       >
-        <Navbar />
+        <NavBar />
         {children}
         <Footer />
       </body>

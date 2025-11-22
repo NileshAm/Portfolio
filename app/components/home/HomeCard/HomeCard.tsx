@@ -19,7 +19,7 @@ const HomeCard = ({
     <Link
       href={href}
       className={
-        "border-4 md:w-1/2 border-secondary rounded-lg bg-secondary flex ms-4 my-3 mx-3 hover:scale-102 transition-all flex-col lg:flex-row " +
+        "border-4 border-secondary rounded-lg bg-secondary flex ms-4 my-3 mx-3 hover:scale-102 transition-all flex-col lg:flex-row " +
         className
       }
     >

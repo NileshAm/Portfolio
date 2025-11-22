@@ -4,12 +4,15 @@ import Link from "next/link";
 
 const Education = () => {
   return (
-    <>
-      <hr className="m-5 border-highlight" />
-      <div className="justify-center flex">
-        <h1 className="text-4xl ms-5 font-bold">Education</h1>
+    <section className="container mx-auto px-4">
+      <div className="flex items-center gap-4 mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-white">
+          Education
+        </h2>
+        <div className="h-1 flex-grow bg-gradient-to-r from-primary to-transparent rounded-full"></div>
       </div>
-      <div className="flex justify-evenly flex-col md:flex-row">
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <HomeCard
           image="/images/56b8ffc1-e90d-4f18-822d-3ca6f2a376cc.jpg"
           href="/education#Maliyadeva"
@@ -28,17 +31,20 @@ const Education = () => {
           “Wisdom is all Wealth” reflects its focus on academic and technical
           excellence.
         </HomeCard>
-        <div className="self-center mx-4 md:w-1/12 w-1/2">
+        
+        <div className="flex items-center justify-center">
           <Link
-            href={"/education"}
-            className="flex justify-evenly items-center border-4 rounded-full border-secondary p-2 hover:bg-secondary hover:text-textPrimary transition-all"
+            href="/education"
+            className="group flex flex-col items-center gap-2 text-textSecondary hover:text-accent transition-colors"
           >
-            <RightArrow className="w-10" />
-            <p className="text-center leading-tight">See More</p>
+            <div className="p-4 rounded-full border border-white/10 bg-surface group-hover:border-accent/50 transition-all">
+              <RightArrow className="w-8 h-8 transform group-hover:translate-x-1 transition-transform" />
+            </div>
+            <span className="font-medium">View All Education</span>
           </Link>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

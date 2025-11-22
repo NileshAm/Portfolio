@@ -4,117 +4,108 @@ import Mail from "@svgs/Mail";
 import Link from "next/link";
 import Instagram from "@svgs/Instagram";
 import Facebook from "@svgs/Facebook";
-import LinkSVG from "@svgs/LinkSVG";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer className="flex flex-wrap bg-primary-dark text-textSecondary text-center p-5 mt-16 justify-evenly">
-      <div className="w-full sm:w-1/2 md:w-1/4">
-        <span className="text-xl">Contacts</span>
-        <div className="md:ms-0 sm:ms-16 ms-8 flex flex-col justify-center gap-2 text-sm">
-          <a
-            href="https://github.com/NileshAm"
-            target="_blank"
-            className="flex hover:text-highlight transition-all hover:underline"
-          >
-            <Github className="w-6" />
-            <span className="self-center ps-4">NileshAm</span>
-          </a>
+    <footer id="contact" className="bg-surface mt-20 pt-16 pb-8 border-t border-white/5">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+          {/* Contact Section */}
+          <div className="space-y-6 text-center md:text-left">
+            <h3 className="text-xl font-bold text-white">Contact</h3>
+            <div className="flex flex-col gap-4 items-center md:items-start">
+              <a
+                href="https://github.com/NileshAm"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-textSecondary hover:text-accent transition-colors group"
+              >
+                <Github className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                <span>NileshAm</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/nilesh-amarathunge-b9a639348/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-textSecondary hover:text-accent transition-colors group"
+              >
+                <LinkedIn className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                <span>Nilesh Amarathunge</span>
+              </a>
+              <a
+                href="mailto:nileshamarathunge@gmail.com"
+                className="flex items-center gap-3 text-textSecondary hover:text-accent transition-colors group"
+              >
+                <Mail className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                <span>nileshamarathunge@gmail.com</span>
+              </a>
+            </div>
+          </div>
 
-          <a
-            href="https://www.linkedin.com/in/nilesh-amarathunge-b9a639348/"
-            target="_blank"
-            className="flex hover:text-highlight transition-all hover:underline"
-          >
-            <LinkedIn className="w-6" />
-            <span className="self-center ps-4">Nilesh Amarathunge</span>
-          </a>
+          {/* Social Media Section */}
+          <div className="space-y-6 text-center">
+            <h3 className="text-xl font-bold text-white">Social Media</h3>
+            <div className="flex flex-col gap-4 items-center">
+              <a
+                href="https://www.instagram.com/nilesh.a_?igsh=MTJoZHZwb2ttenJlOQ=="
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-textSecondary hover:text-accent transition-colors group"
+              >
+                <Instagram className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                <span>@nilesh.a_</span>
+              </a>
+              <a
+                href="https://www.facebook.com/share/1HrPvAraeo/?mibextid=qi2Omg"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-textSecondary hover:text-accent transition-colors group"
+              >
+                <Facebook className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                <span>Nilesh Amarathunge</span>
+              </a>
+            </div>
+          </div>
 
-          <a
-            href="mailto:your@email.com"
-            className="flex hover:text-highlight transition-all hover:underline"
-          >
-            <Mail className="w-6" />
-            <span className="self-center ps-4">
-              nileshamarathunge@gmail.com
-            </span>
-          </a>
-        </div>
-      </div>
-      <div className="w-full sm:w-1/2 md:w-1/4 sm:mt-0 mt-10 text-center ">
-        <span className="text-xl">Social media</span>
-        <div className="md:ms-0 sm:ms-16 ms-8 flex flex-col justify-center gap-2 text-sm pt-1">
-          <div>
-            <Link
-              href={
-                "https://www.instagram.com/nilesh.a_?igsh=MTJoZHZwb2ttenJlOQ=="
-              }
-              target="_blank"
-              className="flex hover:text-highlight hover:underline transition-all"
-            >
-              <Instagram className="w-6" />
-              <span className="ps-4 self-center">nilesh.a_</span>
-            </Link>
-          </div>
-          <div>
-            <Link
-              href={
-                "https://www.facebook.com/share/1HrPvAraeo/?mibextid=qi2Omg"
-              }
-              target="_blank"
-              className="flex hover:text-highlight hover:underline transition-all"
-            >
-              <Facebook className="w-6" />
-              <span className="ps-4 self-center">Nilesh Amarathunge</span>
-            </Link>
+          {/* Links Section */}
+          <div className="space-y-6 text-center md:text-right">
+            <h3 className="text-xl font-bold text-white">Quick Links</h3>
+            <div className="flex flex-col gap-4 items-center md:items-end">
+              <Link
+                href="/education"
+                className="text-textSecondary hover:text-accent transition-colors"
+              >
+                Education
+              </Link>
+              <Link
+                href="/projects"
+                className="text-textSecondary hover:text-accent transition-colors"
+              >
+                Projects
+              </Link>
+              <Link
+                href="/cv"
+                className="text-textSecondary hover:text-accent transition-colors"
+              >
+                CV
+              </Link>
+              <Link
+                href="/about"
+                className="text-textSecondary hover:text-accent transition-colors"
+              >
+                About Me
+              </Link>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="w-full sm:w-1/2 md:w-1/4 sm:mt-0 mt-10">
-        <span className="text-xl">Links</span>
-        <div className="md:ms-0 sm:ms-16 ms-8 flex flex-col justify-center gap-2 text-sm pt-1">
-          <div>
-            <Link
-              href={"/education"}
-              className="flex hover:text-highlight hover:underline transition-all"
-            >
-              <LinkSVG className="w-4" />
-              <span className="ps-4 self-center">Education</span>
-            </Link>
-          </div>
-          <div>
-            <Link
-              href={"/projects"}
-              className="flex hover:text-highlight hover:underline transition-all"
-            >
-              <LinkSVG className="w-4" />
-              <span className="ps-4 self-center">Projects</span>
-            </Link>
-          </div>
-          <div>
-            <Link
-              href={"/cv"}
-              className="flex hover:text-highlight hover:underline transition-all"
-            >
-              <LinkSVG className="w-4" />
-              <span className="ps-4 self-center">CV</span>
-            </Link>
-          </div>
-          <div>
-            <Link
-              href={"/about"}
-              className="flex hover:text-highlight hover:underline transition-all"
-            >
-              <LinkSVG className="w-4" />
-              <span className="ps-4 self-center">About Me</span>
-            </Link>
-          </div>
+
+        <div className="pt-8 border-t border-white/5 text-center">
+          <p className="text-sm text-textSecondary">
+            © {currentYear} Nilesh Amarathunge. All rights reserved.
+          </p>
         </div>
-      </div>
-      <div className="w-full mt-2">
-        <p className="text-sm ">
-          © 2025 Nilesh Amarathunge. All rights reserved.
-        </p>
       </div>
     </footer>
   );

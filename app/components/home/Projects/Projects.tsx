@@ -4,12 +4,15 @@ import Link from "next/link";
 
 const Projects = () => {
   return (
-    <>
-      <hr className="m-5 border-highlight" />
-      <div className="justify-center flex">
-        <h1 className="text-4xl ms-5 font-bold">Projects</h1>
+    <section className="container mx-auto px-4">
+      <div className="flex items-center gap-4 mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-white">
+          Projects
+        </h2>
+        <div className="h-1 flex-grow bg-gradient-to-r from-secondary to-transparent rounded-full"></div>
       </div>
-      <div className="flex justify-evenly flex-col md:flex-row">
+
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <HomeCard
           image="/images/f0c11ce6-d748-4db7-ba71-59ac5463216c.jpg"
           href="/projects/RoboGames-2025"
@@ -17,8 +20,7 @@ const Projects = () => {
         >
           RoboGames is an inter-university robotics competition where student
           teams design, build, and battle custom-built robots in head-to-head
-          matches. As a proud member of Team LYNX, I played a leading role in
-          bringing our battle bot to life.
+          matches.
         </HomeCard>
         <HomeCard
           image="/images/a7adc748-48d8-43d4-872b-138398894027.jpg"
@@ -28,17 +30,20 @@ const Projects = () => {
           store, providing a complete online platform for browsing and
           purchasing products.
         </HomeCard>
-        <div className="self-center mx-4 md:w-1/12 w-1/2 ">
+        
+        <div className="flex items-center justify-center">
           <Link
-            href={"/projects"}
-            className="flex justify-evenly items-center border-4 rounded-full border-secondary p-2 hover:bg-secondary hover:text-textPrimary transition-all "
+            href="/projects"
+            className="group flex flex-col items-center gap-2 text-textSecondary hover:text-accent transition-colors"
           >
-            <RightArrow className="w-10" />
-            <p className="text-center leading-tight">See More</p>
+            <div className="p-4 rounded-full border border-white/10 bg-surface group-hover:border-accent/50 transition-all">
+              <RightArrow className="w-8 h-8 transform group-hover:translate-x-1 transition-transform" />
+            </div>
+            <span className="font-medium">View All Projects</span>
           </Link>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 
