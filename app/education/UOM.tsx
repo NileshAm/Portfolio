@@ -71,8 +71,8 @@ const UOM = () => {
                 <tr>
                   <td>2023</td>
                   <td>Semester 2</td>
-                  <td>*</td>
-                  <td>*</td>
+                  <td>4.0</td>
+                  <td>Dean&apos;s List</td>
                 </tr>
                 <tr>
                   <td>2023</td>
