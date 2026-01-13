@@ -64,7 +64,7 @@ const page = () => {
           </table>
           <div className="w-36 p-2 btn btn-hover my-1 ms-5 md:mb-0 mb-3">
             <a
-              href="https://github.com/NileshAm/RoboGames-TeamLynx"
+              href="https://github.com/NileshAm/Robot-Design-and-Competition"
               target="_blank"
               className="text-sm rounded-lg"
             >
