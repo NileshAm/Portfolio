@@ -1,4 +1,4 @@
-import { CDNFetch } from "../utils/imageFetch";
+import { CDNFetch } from "@utils/imageFetch";
 
 const page = () => {
   return (

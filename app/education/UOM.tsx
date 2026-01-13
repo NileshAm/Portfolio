@@ -63,22 +63,22 @@ const UOM = () => {
               </thead>
               <tbody className="text-center ">
                 <tr>
-                  <td>2023</td>
+                  <td>2024</td>
                   <td>Semester 1</td>
                   <td>4.0</td>
                   <td>Dean&apos;s List</td>
                 </tr>
                 <tr>
-                  <td>2023</td>
+                  <td>2025</td>
                   <td>Semester 2</td>
                   <td>4.0</td>
                   <td>Dean&apos;s List</td>
                 </tr>
                 <tr>
-                  <td>2023</td>
+                  <td>2025</td>
                   <td>Semester 3</td>
-                  <td>*</td>
-                  <td>*</td>
+                  <td>3.6913</td>
+                  <td>-</td>
                 </tr>
                 <tr>
                   <td>2023</td>

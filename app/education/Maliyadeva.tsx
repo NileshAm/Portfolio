@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Sections from "./Sections/Sections";
 import SectionTopic from "./SectionTopic/SectionTopic";
-import { CDNFetch } from "../utils/imageFetch";
+import { CDNFetch } from "@utils/imageFetch";
 import RightArrow from "@svgs/RightArrow";
 
 const Maliyadeva = () => {

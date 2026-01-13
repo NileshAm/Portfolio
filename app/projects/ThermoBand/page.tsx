@@ -1,7 +1,7 @@
 import Github from "@svgs/Github";
 import Viewer3D from "@comps/Viewer3D/Viewer3D";
 import Image from "next/image";
-import { CDNFetch } from "@/app/utils/imageFetch";
+import { CDNFetch } from "@utils/imageFetch";
 
 const page = () => {
   return (

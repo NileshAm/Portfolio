@@ -21,10 +21,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./*"],
-      "@comps/*": ["app/components/*"],
-      "@utils/*": ["app/utils/*"],
+      "@comps/*": ["components/*"],
+      "@utils/*": ["utils/*"],
       "@images/*": ["app/public/images/*"],
-      "@svgs/*": ["app/components/svgs/*"],
+      "@svgs/*": ["components/svgs/*"],
       "@types/*": ["app/types/*"]
     },
     "types": ["./cloudflare-env.d.ts", "node"]

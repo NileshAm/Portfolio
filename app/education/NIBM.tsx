@@ -1,4 +1,4 @@
-import { CDNFetch } from "../utils/imageFetch";
+import { CDNFetch } from "@utils/imageFetch";
 import Sections from "./Sections/Sections";
 import SectionTopic from "./SectionTopic/SectionTopic";
 import Image from "next/image";

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Github from "@svgs/Github";
-import { CDNFetch } from "@/app/utils/imageFetch";
+import { CDNFetch } from "@utils/imageFetch";
 const page = () => {
   return (
     <main className="mx-3">
