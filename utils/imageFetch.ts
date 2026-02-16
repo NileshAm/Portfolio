@@ -21,3 +21,4 @@ export function getImageSizeFromPublic(publicPath: string) {
     height: dim.height ?? 0,
   };
 }
+
