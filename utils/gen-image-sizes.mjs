@@ -5,7 +5,6 @@ import { imageSize } from "image-size";
 const publicDir = path.join(process.cwd(), "public");
 const outFile = path.join(
   process.cwd(),
-  "src",
   "generated",
   "image-sizes.json",
 );
