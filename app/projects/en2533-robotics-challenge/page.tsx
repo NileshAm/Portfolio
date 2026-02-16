@@ -1,6 +1,6 @@
 import Github from "@svgs/Github";
-import Image from "next/image";
 import { CDNFetch } from "@utils/imageFetch";
+import Img from "@/components/ui/Img";
 
 const page = () => {
   return (
@@ -186,19 +186,23 @@ const page = () => {
       <div className="m-3 mt-4">
         <h2 className="text-3xl underline font-bold">Gallery</h2>
         <div className="flex flex-wrap justify-evenly mt-4">
-          <Image
-            src={CDNFetch("/images/c5fbbc8b-4c4d-4ec9-ab18-ef8c424c56e4.png")}
-            alt="ThermoBand image"
-            width={600}
-            height={400}
-            className="mx-2 my-2 rounded-lg"
+          <Img
+            src={CDNFetch("/images/74bad68f-a2de-40cd-be93-ab241adf3510.jpg")}
+            alt="Robotics Img"
+            containerClassName="w-1/3"
+            className="m-5 rounded-xl"
           />
-          <Image
-            src={CDNFetch("/images/2559919d-8ba5-4e3c-ae3e-aae3bef21372.png")}
-            alt="ThermoBand image"
-            width={400}
-            height={400}
-            className="mx-2 my-2 rounded-lg "
+          <Img
+            src={CDNFetch("/images/e3646a8e-2a2a-4f95-93a5-1fefea48fba7.jpg")}
+            alt="Robotics Img"
+            containerClassName="w-1/3"
+            className="m-5 rounded-xl"
+          />
+          <Img
+            src={CDNFetch("/images/f2884f0a-7d66-4f97-b89a-05fca45c3a4b.jpg")}
+            alt="Robotics Img"
+            containerClassName="w-1/3"
+            className="m-5 rounded-xl"
           />
         </div>
       </div>

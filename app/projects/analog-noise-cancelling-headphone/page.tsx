@@ -2,6 +2,7 @@ import Github from "@svgs/Github";
 import Viewer3D from "@comps/Viewer3D/Viewer3D";
 import Image from "next/image";
 import { CDNFetch } from "@utils/imageFetch";
+import Img from "@/components/ui/Img";
 
 const page = () => {
   return (
@@ -143,12 +144,6 @@ const page = () => {
               </ul>
             </li>
           </ol>
-          <div className="lg:w-1/2 w-full h-[400px] mx-auto my-5 p-3 bg-primary-light rounded-3xl flex items-center justify-center border-2 border-dashed border-gray-400">
-            <Viewer3D
-              src="/models/headphone_pcb.glb"
-              className="w-full h-full"
-            />
-          </div>
         </div>
       </div>
 
@@ -171,19 +166,29 @@ const page = () => {
       <div className="m-3 mt-4">
         <h2 className="text-3xl underline font-bold">Gallery</h2>
         <div className="flex flex-wrap justify-evenly mt-4">
-          <Image
-            src={CDNFetch("/images/c5fbbc8b-4c4d-4ec9-ab18-ef8c424c56e4.png")}
-            alt="ThermoBand image"
-            width={600}
-            height={400}
-            className="mx-2 my-2 rounded-lg"
+          <Img
+            src={CDNFetch("/images/0e3e650e-163d-4c91-8ece-73885bd5730b.jpg")}
+            alt="Headphone Image"
+            containerClassName="w-1/3"
+            className="m-5 rounded-lg"
           />
-          <Image
-            src={CDNFetch("/images/2559919d-8ba5-4e3c-ae3e-aae3bef21372.png")}
-            alt="ThermoBand image"
-            width={400}
-            height={400}
-            className="mx-2 my-2 rounded-lg "
+          <Img
+            src={CDNFetch("/images/3ece981b-26ae-48db-8bca-b2fc7a97f510.jpg")}
+            alt="Headphone Image"
+            containerClassName="w-1/3 "
+            className="m-5 rounded-lg"
+          />
+          <Img
+            src={CDNFetch("/images/5aafe34a-c073-474c-8aa3-7177c522bbe5.jpg")}
+            alt="Headphone Image"
+            containerClassName="w-1/3 "
+            className="m-5 rounded-lg"
+          />
+          <Img
+            src={CDNFetch("/images/5b83d79b-60a1-4141-9158-2f55e1990dd9.jpg")}
+            alt="Headphone Image"
+            containerClassName="w-1/3 "
+            className="m-5 rounded-lg"
           />
         </div>
       </div>

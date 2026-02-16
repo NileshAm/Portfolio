@@ -2,14 +2,15 @@ import Image from "next/image";
 import Sections from "./Sections/Sections";
 import SectionTopic from "./SectionTopic/SectionTopic";
 import TopicList from "./TopicList/TopicList";
-import RightArrow from "@svgs/RightArrow";
 import { CDNFetch } from "@utils/imageFetch";
+import Button from "@comps/ui/Button";
+import { FaExternalLinkAlt, FaArrowRight } from "react-icons/fa";
 
 const UOM = () => {
   return (
     <Sections id="UOM" heading="University of Moratuwa">
       <SectionTopic id="UOMinfo" heading="Info" className="">
-        <div className="md:w-4/5 w-full md:px-5 px-2">
+        <div className=" w-full md:px-5 px-2">
           <p className="text-justify leading-relaxed md:pe-5">
             The University of Moratuwa—familiarly known as Mora—is Sri
             Lanka&apos;s leading public technological university, situated in
@@ -35,17 +36,17 @@ const UOM = () => {
             technology and innovation, guided by its enduring motto “Vidyayeva
             Sarvadhanam” (Wisdom is all Wealth).
           </p>
-          <div className="md:w-1/6 w-1/2 p-2 btn btn-hover my-2">
-            <a
+          <div className="w-fit p-2 my-2">
+            <Button
               href="https://www.uom.lk"
-              className="text-sm rounded-lg"
               target="_blank"
+              variant="primary"
+              size="sm"
+              icon={<FaExternalLinkAlt />}
+              className="w-full"
             >
-              <div className="flex justify-center">
-                <span className=" ms-1 text-center">Visit Website</span>
-                <RightArrow className="ms-2 w-4" />
-              </div>
-            </a>
+              Visit Website
+            </Button>
           </div>
         </div>
       </SectionTopic>
@@ -159,16 +160,16 @@ const UOM = () => {
                   className="rounded-lg mt-3 md:w-auto w-full ms-3 md:me-0 me-10"
                 />
               </div>
-              <div className="md:w-36 w-full p-2 btn btn-hover my-5">
-                <a
+              <div className="w-fit p-2 my-5">
+                <Button
                   href="/projects/RoboGames-2025"
-                  className="text-sm rounded-lg"
+                  variant="secondary"
+                  size="sm"
+                  icon={<FaArrowRight />}
+                  className="w-full"
                 >
-                  <div className="flex justify-center">
-                    <span className=" ms-1 text-center">Read more</span>
-                    <RightArrow className="ms-2 w-4" />
-                  </div>
-                </a>
+                  Read more
+                </Button>
               </div>
             </div>
             <Image
@@ -193,13 +194,16 @@ const UOM = () => {
               engineering integration and embedded system development.
             </p>
           </TopicList>
-          <div className="w-36 p-2 btn btn-hover my-5">
-            <a href="/projects/ThermoBand" className="text-sm rounded-lg">
-              <div className="flex justify-center">
-                <span className=" ms-1 text-center">Read more</span>
-                <RightArrow className="ms-2 w-4" />
-              </div>
-            </a>
+          <div className="w-fit p-2 my-5">
+            <Button
+              href="/projects/ThermoBand"
+              variant="secondary"
+              size="sm"
+              icon={<FaArrowRight />}
+              className="w-full"
+            >
+              Read more
+            </Button>
           </div>
         </ol>
       </SectionTopic>

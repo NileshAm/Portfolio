@@ -240,7 +240,7 @@ const page = () => {
           </ol>
           <Viewer3D
             src="https://cdn.jsdelivr.net/gh/NileshAm/RoboGames-TeamLynx@latest/public/Assembly.glb"
-            className="md:w-1/2 w-full h-max mx-auto md:my-5 my-2 p-3 bg-primary-light rounded-3xl"
+            className="md:w-1/2 w-full h-max mx-auto md:my-5 my-2 p-3 rounded-3xl border-dashed border-gray-400 border-2"
           />
         </div>
       </div>

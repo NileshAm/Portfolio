@@ -2,7 +2,8 @@ import Image from "next/image";
 import Sections from "./Sections/Sections";
 import SectionTopic from "./SectionTopic/SectionTopic";
 import { CDNFetch } from "@utils/imageFetch";
-import RightArrow from "@svgs/RightArrow";
+import Button from "@comps/ui/Button";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Maliyadeva = () => {
   return (
@@ -41,17 +42,17 @@ const Maliyadeva = () => {
               including North Western Provincial Chief Minister Athula
               Wijesinghe (2002-2013)
             </p>
-            <div className="md:w-1/6 p-2 btn btn-hover my-2">
-              <a
+            <div className="w-fit p-2 my-2">
+              <Button
                 href="https://www.maliyadeva.lk"
-                className="text-sm rounded-lg"
                 target="_blank"
+                variant="primary"
+                size="sm"
+                icon={<FaExternalLinkAlt />}
+                className="w-full"
               >
-                <div className="flex justify-center">
-                  <span className=" ms-1 text-center">Visit Website</span>
-                  <RightArrow className="ms-2 w-4" />
-                </div>
-              </a>
+                Visit Website
+              </Button>
             </div>
           </div>
           <Image

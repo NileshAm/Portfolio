@@ -171,7 +171,7 @@ const page = () => {
           </ol>
           <Viewer3D
             src="https://cdn.jsdelivr.net/gh/NileshAm/ThermoBand-EN1190/public/Assembly.glb"
-            className="lg:w-1/2 w-full h-max mx-auto my-5 p-3 bg-primary-light rounded-3xl"
+            className="lg:w-1/2 w-full h-max mx-auto my-5 p-3 rounded-3xl border-dashed border-gray-400 border-2"
           />
         </div>
       </div>

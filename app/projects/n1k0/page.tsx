@@ -2,6 +2,7 @@ import Github from "@svgs/Github";
 import Viewer3D from "@comps/Viewer3D/Viewer3D";
 import Image from "next/image";
 import { CDNFetch } from "@utils/imageFetch";
+import Img from "@/components/ui/Img";
 
 const page = () => {
   return (
@@ -159,19 +160,23 @@ const page = () => {
       <div className="m-3 mt-4">
         <h2 className="text-3xl underline font-bold">Gallery</h2>
         <div className="flex flex-wrap justify-evenly mt-4">
-          <Image
-            src={CDNFetch("/images/c5fbbc8b-4c4d-4ec9-ab18-ef8c424c56e4.png")}
+          <Img
+            src={CDNFetch("/images/bb7da0fd-dfc8-4e2e-834a-c2e3f76dcbcd.jpg")}
             alt="ThermoBand image"
-            width={600}
-            height={400}
-            className="mx-2 my-2 rounded-lg"
+            className=" m-5 rounded-lg"
+            containerClassName="w-1/3"
           />
-          <Image
-            src={CDNFetch("/images/2559919d-8ba5-4e3c-ae3e-aae3bef21372.png")}
+          <Img
+            src={CDNFetch("/images/490d3c21-a598-4a6a-a1bd-e493b54b2f12.jpg")}
             alt="ThermoBand image"
-            width={400}
-            height={400}
-            className="mx-2 my-2 rounded-lg "
+            className=" m-5 rounded-lg"
+            containerClassName="w-1/3 "
+          />
+          <Img
+            src={CDNFetch("/images/95007715-a384-4b90-b614-f93299b00be7.jpg")}
+            alt="ThermoBand image"
+            className=" m-5 rounded-lg"
+            containerClassName="w-1/3 "
           />
         </div>
       </div>

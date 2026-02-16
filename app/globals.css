@@ -73,4 +73,8 @@ html {
   .project-title {
     @apply text-5xl my-5 ms-2 text-center;
   }
+
+  .content-full{
+    @apply md:-mx-16 -mx-4;
+  }
 }
