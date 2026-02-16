@@ -135,7 +135,7 @@ const page = () => {
           </ol>
           <div className="lg:w-1/2 w-full mx-auto my-5 p-3 bg-transparent rounded-3xl flex items-center justify-center border-2 border-dashed border-gray-400">
             <Viewer3D
-              src="/3D_models/N1k0.glb"
+              src="https://cdn.jsdelivr.net/gh/NileshAm/Portfolio@latest/public/3D_models/N1k0.glb"
               className="w-full h-full rounded-2xl"
             />
           </div>
