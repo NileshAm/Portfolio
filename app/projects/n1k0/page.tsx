@@ -165,18 +165,21 @@ const page = () => {
             alt="ThermoBand image"
             className=" m-5 rounded-lg"
             containerClassName="w-1/3"
+            aspectRatio={2828 / 1825}
           />
           <Img
             src={CDNFetch("/images/490d3c21-a598-4a6a-a1bd-e493b54b2f12.jpg")}
             alt="ThermoBand image"
             className=" m-5 rounded-lg"
             containerClassName="w-1/3 "
+            aspectRatio={4000 / 2252}
           />
           <Img
             src={CDNFetch("/images/95007715-a384-4b90-b614-f93299b00be7.jpg")}
             alt="ThermoBand image"
             className=" m-5 rounded-lg"
             containerClassName="w-1/3 "
+            aspectRatio={2252 / 1396}
           />
         </div>
       </div>

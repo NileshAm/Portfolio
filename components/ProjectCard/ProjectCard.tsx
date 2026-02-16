@@ -22,6 +22,7 @@ const ProjectCard = ({
           src={src}
           alt={title}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          aspectRatio={4/3}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent opacity-80" />
       </div>

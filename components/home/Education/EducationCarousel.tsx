@@ -24,6 +24,7 @@ const EducationCarousel = () => {
               alt={edu.title}
               containerClassName="absolute inset-0 w-full h-full"
               className="group-hover:scale-105 transition-transform duration-700"
+              aspectRatio={16/9}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex flex-col justify-end p-6 md:p-10">
               <div className="flex items-center gap-3 mb-2">

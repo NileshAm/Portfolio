@@ -171,24 +171,28 @@ const page = () => {
             alt="Headphone Image"
             containerClassName="w-1/3"
             className="m-5 rounded-lg"
-          />
+            aspectRatio={1280/720}
+            />
           <Img
             src={CDNFetch("/images/3ece981b-26ae-48db-8bca-b2fc7a97f510.jpg")}
             alt="Headphone Image"
             containerClassName="w-1/3 "
             className="m-5 rounded-lg"
-          />
+            aspectRatio={2992/2856}
+            />
           <Img
             src={CDNFetch("/images/5aafe34a-c073-474c-8aa3-7177c522bbe5.jpg")}
             alt="Headphone Image"
             containerClassName="w-1/3 "
             className="m-5 rounded-lg"
-          />
+            aspectRatio={2992/2848}
+            />
           <Img
             src={CDNFetch("/images/5b83d79b-60a1-4141-9158-2f55e1990dd9.jpg")}
             alt="Headphone Image"
             containerClassName="w-1/3 "
             className="m-5 rounded-lg"
+            aspectRatio={2252/3056}
           />
         </div>
       </div>

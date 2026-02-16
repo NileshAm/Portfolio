@@ -44,8 +44,10 @@ export default function Home() {
             <Img
               src={CDNFetch("/images/profile-photo.jpg")}
               alt="Nilesh Amarathunge"
-              containerClassName="w-full h-full rounded-full border-4 border-white/10 shadow-2xl relative z-10"
+              containerClassName="w-full h-full relative z-10"
+              className="rounded-full  border-4 border-white/10 shadow-2xl "
               loading="eager"
+              aspectRatio={1}
             />
           </div>
         </div>

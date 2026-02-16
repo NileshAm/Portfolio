@@ -1,11 +1,11 @@
 import Image, { ImageProps } from "next/image";
-import { getImageSizeFromPublic } from "@utils/imageFetch";
 
-interface ImgProps extends Omit<ImageProps, "className"> {
+interface ImgProps extends Omit<ImageProps, "className" | "height" | "width"> {
   src: string;
-  containerClassName?: string; // Class for the wrapper div
-  className?: string; // Class for the image itself
   alt: string;
+  containerClassName?: string;
+  className?: string;
+  aspectRatio: number; // width / height
 }
 
 const Img = ({
@@ -13,21 +13,29 @@ const Img = ({
   alt,
   containerClassName,
   className,
-  fill = true, // Default to fill as requested for sizing via CSS
+  aspectRatio,
   loading = "lazy",
   ...props
 }: ImgProps) => {
-  const img = getImageSizeFromPublic(src);
   return (
     <div className={containerClassName}>
       <div
-        className={`relative overflow-hidden ${className}`}
-        style={{ aspectRatio: `${img.width} / ${img.height}` }}
+        className={`relative overflow-hidden ${className || ""}`}
+        style={{ aspectRatio }}
       >
-        <Image src={src} alt={alt} fill={fill} loading={loading} {...props} />
+        <Image
+          src={src}
+          alt={alt}
+          fill
+          loading={loading}
+          className="object-cover"
+          sizes="(max-width: 768px) 100vw, 33vw"
+          {...props}
+        />
       </div>
     </div>
   );
 };
+
 
 export default Img;
