@@ -10,7 +10,7 @@ const page = () => {
             Hello! I&apos;m{" "}
             <span className="text-accent font-bold">A.M. Nilesh Amarathunge</span>, a
             tech enthusiast and engineering undergraduate with a strong passion
-            for robotics, machine learning, and software development. My journey
+            for robotics, machine learning, and embedded systems development. My journey
             in technology began long before university, driven by curiosity,
             hands-on projects, and a desire to build meaningful solutions.
           </p>
@@ -32,8 +32,8 @@ const page = () => {
             programming languages and tools that I now use every day. Currently,
             I am an undergraduate at the University of Moratuwa, Faculty of
             Engineering, studying Electronics and Telecommunication Engineering.
-            I was honored to be placed on the <span className="text-accent font-bold">Dean&apos;s List</span> in my very first
-            semester with a perfect <span className="text-accent font-bold">SGPA of 4.00</span>.
+            I was honored to be placed on the <span className="text-accent font-bold">Dean&apos;s List</span> in my very first and second
+            semesters with a perfect <span className="text-accent font-bold">SGPA of 4.00</span>.
           </p>
         </div>
         <div className="relative md:w-1/3 m-5 mt-4 h-fit flex justify-center">
@@ -56,6 +56,12 @@ const page = () => {
         combining both hardware and software development.
       </p>
       <ul className="list-disc md:ms-14 ms-7 mt-2 leading-relaxed text-justify">
+        <li className="mt-4">
+          Falcon E-racing: For the Formula Student competition, I designed and fabricated the PCB required for safety and telemetry systems.
+        </li>
+        <li className="mt-4">
+          N1K0: I led the mechanical design of the micromouse. Where i designed the full powertrain and chassis using SolidWorks.
+        </li>
         <li className="mt-4">
           Robogames (Team LYNX): Designed and fabricated the 3D CAD model of a
           battle robot and supported component integration. Our team competed
@@ -93,6 +99,9 @@ const page = () => {
         Leadership & Extracurricular Activities
       </h2>
       <ul className="list-disc md:ms-14 ms-7 mt-2 leading-relaxed text-justify">
+        <li className="mt-4">
+          Student Representative, Faculty of Engineering - University of Moratuwa (2026-Present) — Advocated for student needs and facilitated communication between students and faculty, contributing to a more inclusive academic environment.
+        </li>
         <li className="mt-4">
           Vice Secretary, Philatelic Society - Maliyadeva College
         </li>
