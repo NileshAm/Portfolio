@@ -194,14 +194,14 @@ const page = () => {
             aspectRatio={2433/2236}
           />
           <Img
-            src={CDNFetch("/images/e3646a8e-2a2a-4f95-93a5-1fefea48fba7.webp")}
+            src={CDNFetch("/images/e3646a8e-2a2a-4f95-93a5-1fefea48fba7.jpg")}
             alt="Robotics Img"
             containerClassName="w-1/3"
             className="m-5 rounded-xl"
             aspectRatio={6112/6112}
           />
           <Img
-            src={CDNFetch("/images/f2884f0a-7d66-4f97-b89a-05fca45c3a4b.webp")}
+            src={CDNFetch("/images/f2884f0a-7d66-4f97-b89a-05fca45c3a4b.jpg")}
             alt="Robotics Img"
             containerClassName="w-1/3"
             className="m-5 rounded-xl"

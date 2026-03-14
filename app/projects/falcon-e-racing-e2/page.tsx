@@ -6,7 +6,7 @@ const page = () => {
     <main className="px-3">
       <h1 className="project-title">Falcon E Racing</h1>
       <div className="flex xl:flex-row flex-col gap-6">
-        <div className="ms-2 xl:w-[600px] shrink-0">
+        <div className="ms-2 xl:w-1/2 shrink-0">
           <h2 className="text-3xl mt-3 underline">Overview</h2>
           <table className="mt-2 md:mx-5 mx-2 w-full">
             <thead>
@@ -58,7 +58,7 @@ const page = () => {
             </tbody>
           </table>
         </div>
-        <div className="flex-1 mt-6 xl:mt-0 flex items-start">
+        <div className="flex-1 mt-6 mx-3 xl:mt-0 flex items-start">
           <Image
             src={
               "/images/Falcon_E_Racing_E2/6afcc2ad-1efb-43d0-8502-77b5ba427c46.webp"
@@ -157,7 +157,7 @@ const page = () => {
             alt="Robogames 2025"
             width={500}
             height={250}
-            className="mx-2 my-2 rounded-lg"
+            className="mx-2 my-2 rounded-lg object-cover"
           />
           <Image
             src={CDNFetch(

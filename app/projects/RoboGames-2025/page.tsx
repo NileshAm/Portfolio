@@ -6,19 +6,19 @@ const page = () => {
   return (
     <main className="px-3">
       <h1 className="project-title">Robogames 2025</h1>
-      <div className="flex md:flex-row flex-col">
-        <div className="ms-2">
+      <div className="flex xl:flex-row flex-col gap-6">
+        <div className="ms-2 xl:w-3/4 shrink-0">
           <h2 className="text-3xl mt-3 underline">Overview</h2>
-          <table className="mt-2 md:mx-5 mx-2">
+          <table className="mt-2 md:mx-5 mx-2 w-full">
             <thead>
               <tr>
-                <th className="w-1/5"></th>
-                <th className="w-auto"></th>
+                <th className="w-1/4"></th>
+                <th className="w-3/4"></th>
               </tr>
             </thead>
             <tbody className="align-top">
               <tr>
-                <td>Role:</td>
+                <td className="font-bold py-2">Role:</td>
                 <td className="pb-5 text-justify leading-relaxed">
                   I was responsible for the entire 3D design of the combat
                   robot, from conceptual modeling to structural optimization. I
@@ -28,7 +28,7 @@ const page = () => {
                 </td>
               </tr>
               <tr>
-                <td>Outcome:</td>
+                <td className="font-bold py-2">Outcome:</td>
                 <td className="pb-5 text-justify leading-relaxed">
                   Our robot won 2 battles against rival teams, a strong
                   performance that demonstrated our design&apos;s resilience and
@@ -38,7 +38,7 @@ const page = () => {
                 </td>
               </tr>
               <tr>
-                <td>Skills Applied:</td>
+                <td className="font-bold py-2">Skills Applied:</td>
                 <td className="pb-4 text-justify flex flex-wrap">
                   <span className="px-2 py-1 mx-2 mb-2 bg-primary-light rounded-lg">
                     Solidworks
@@ -72,13 +72,15 @@ const page = () => {
             </a>
           </div>
         </div>
-        <Image
-          src={"/images/2784a8a5-d139-4956-869e-abfd2278b6d2.webp"}
-          alt="Robogames 2025"
-          width={300}
-          height={300}
-          className="md:mx-6 rounded-lg md:w-auto w-full h-fit"
-        />
+        <div className="flex-1 mt-6 mx-3 xl:mt-0 flex items-start justify-center">
+          <Image
+            src={"/images/2784a8a5-d139-4956-869e-abfd2278b6d2.webp"}
+            alt="Robogames 2025"
+            width={600}
+            height={800}
+            className="rounded-lg w-auto h-auto max-w-full max-h-[500px] shadow-lg"
+          />
+        </div>
       </div>
       <div className="m-3">
         <h2 className="text-3xl underline font-bold">

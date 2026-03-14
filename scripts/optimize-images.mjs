@@ -2,7 +2,11 @@ import fs from 'fs';
 import path from 'path';
 import sharp from 'sharp';
 
-const directoryPath = path.join(process.cwd(), 'public', 'images');
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const directoryPath = path.join(__dirname, '..', 'public', 'images');
 
 const getAllFiles = function(dirPath, arrayOfFiles) {
   const files = fs.readdirSync(dirPath)
