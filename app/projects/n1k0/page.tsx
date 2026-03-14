@@ -1,6 +1,5 @@
 import Github from "@svgs/Github";
 import Viewer3D from "@comps/Viewer3D/Viewer3D";
-import Image from "next/image";
 import { CDNFetch } from "@utils/imageFetch";
 import Img from "@/components/ui/Img";
 

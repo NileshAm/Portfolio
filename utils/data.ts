@@ -1,5 +1,15 @@
 export const projects = [
   {
+    id: "falcon-e-racing",
+    title: "Falcon E Racing",
+    description:
+      "Formula Student team of University of Moratuwa. As a Low Voltage Engineer, I contributed to the battery cart and its wiring, and was involved in designing and manufacturing PCBs for the car.",
+    image:
+      "/images/Falcon_E_Racing_E2/015ccb09-46b2-4d9e-a90b-912aa462bbd6.jpg",
+    link: "/projects/falcon-e-racing-e2",
+    tags: ["Automotive", "PCB Design", "Embedded Systems"],
+  },
+  {
     id: "robo-games-2025",
     title: "RoboGames 2025",
     description:
