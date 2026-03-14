@@ -73,7 +73,7 @@ const page = () => {
           </div>
         </div>
         <Image
-          src={"/images/2784a8a5-d139-4956-869e-abfd2278b6d2.jpg"}
+          src={"/images/2784a8a5-d139-4956-869e-abfd2278b6d2.webp"}
           alt="Robogames 2025"
           width={300}
           height={300}
@@ -270,14 +270,14 @@ const page = () => {
         <h2 className="text-3xl underline font-bold">Gallery</h2>
         <div className="flex flex-wrap justify-evenly mt-4">
           <Image
-            src={CDNFetch("/images/9f540a0e-9302-4341-aeda-7d520acef92c.jpg")}
+            src={CDNFetch("/images/9f540a0e-9302-4341-aeda-7d520acef92c.webp")}
             alt="Robogames 2025"
             width={500}
             height={500}
             className="mx-2 my-2 rounded-lg"
           />
           <Image
-            src={CDNFetch("/images/e1a06a91-7854-4188-a68a-3fb596bc37df.jpg")}
+            src={CDNFetch("/images/e1a06a91-7854-4188-a68a-3fb596bc37df.webp")}
             alt="Robogames 2025"
             width={750}
             height={500}

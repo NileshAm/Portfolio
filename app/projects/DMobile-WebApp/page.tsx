@@ -194,7 +194,7 @@ const page = () => {
             </li>
           </ol>
           <Image
-            src={"/images/a7adc748-48d8-43d4-872b-138398894027.jpg"}
+            src={"/images/a7adc748-48d8-43d4-872b-138398894027.webp"}
             alt="D-Mobile e-commerce website"
             width={800}
             height={(800 * 9) / 16}

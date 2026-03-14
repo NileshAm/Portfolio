@@ -68,7 +68,7 @@ const NIBM = () => {
             </div>
           </div>
           <Image
-            src={CDNFetch("/images/db163e20-0537-47a2-994b-b4ca675881e3.jpg")}
+            src={CDNFetch("/images/db163e20-0537-47a2-994b-b4ca675881e3.webp")}
             alt="NIBM image"
             className="md:w-1/5 w-full rounded-lg h-fit"
             width={200}

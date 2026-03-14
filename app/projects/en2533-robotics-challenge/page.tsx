@@ -187,21 +187,21 @@ const page = () => {
         <h2 className="text-3xl underline font-bold">Gallery</h2>
         <div className="flex flex-wrap justify-evenly mt-4">
           <Img
-            src={CDNFetch("/images/74bad68f-a2de-40cd-be93-ab241adf3510.jpg")}
+            src={CDNFetch("/images/74bad68f-a2de-40cd-be93-ab241adf3510.webp")}
             alt="Robotics Img"
             containerClassName="w-1/3"
             className="m-5 rounded-xl"
             aspectRatio={2433/2236}
           />
           <Img
-            src={CDNFetch("/images/e3646a8e-2a2a-4f95-93a5-1fefea48fba7.jpg")}
+            src={CDNFetch("/images/e3646a8e-2a2a-4f95-93a5-1fefea48fba7.webp")}
             alt="Robotics Img"
             containerClassName="w-1/3"
             className="m-5 rounded-xl"
             aspectRatio={6112/6112}
           />
           <Img
-            src={CDNFetch("/images/f2884f0a-7d66-4f97-b89a-05fca45c3a4b.jpg")}
+            src={CDNFetch("/images/f2884f0a-7d66-4f97-b89a-05fca45c3a4b.webp")}
             alt="Robotics Img"
             containerClassName="w-1/3"
             className="m-5 rounded-xl"

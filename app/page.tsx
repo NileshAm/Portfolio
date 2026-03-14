@@ -42,7 +42,7 @@ export default function Home() {
           <div className="relative w-64 h-64 md:w-96 md:h-96">
             <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full blur-3xl opacity-30 animate-pulse"></div>
             <Img
-              src={CDNFetch("/images/profile-photo.jpg")}
+              src={CDNFetch("/images/profile-photo.webp")}
               alt="Nilesh Amarathunge"
               containerClassName="w-full h-full relative z-10"
               className="rounded-full  border-4 border-white/10 shadow-2xl "

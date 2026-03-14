@@ -118,7 +118,7 @@ const UOM = () => {
             </p>
           </div>
           <Image
-            src={CDNFetch("/images/be0393d2-2e99-4a22-82ee-4dacbfdc5bdd.jpg")}
+            src={CDNFetch("/images/be0393d2-2e99-4a22-82ee-4dacbfdc5bdd.webp")}
             alt="University of Moratuwa"
             width={600}
             height={(600 / 4) * 3}
@@ -143,7 +143,7 @@ const UOM = () => {
               <div className="flex justify-evenly flex-wrap mt-2 pe-5 md:pe-0">
                 <Image
                   src={CDNFetch(
-                    "/images/9f540a0e-9302-4341-aeda-7d520acef92c.jpg"
+                    "/images/9f540a0e-9302-4341-aeda-7d520acef92c.webp"
                   )}
                   alt="Robogames Image"
                   width={350}
@@ -152,7 +152,7 @@ const UOM = () => {
                 />
                 <Image
                   src={CDNFetch(
-                    "/images/e1a06a91-7854-4188-a68a-3fb596bc37df.jpg"
+                    "/images/e1a06a91-7854-4188-a68a-3fb596bc37df.webp"
                   )}
                   alt="Robogames Image"
                   width={500}
@@ -173,7 +173,7 @@ const UOM = () => {
               </div>
             </div>
             <Image
-              src={CDNFetch("/images/2784a8a5-d139-4956-869e-abfd2278b6d2.jpg")}
+              src={CDNFetch("/images/2784a8a5-d139-4956-869e-abfd2278b6d2.webp")}
               alt="Robogames Image"
               width={350}
               height={(350 / 9) * 16}

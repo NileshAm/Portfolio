@@ -198,14 +198,14 @@ const page = () => {
         <h2 className="text-3xl underline font-bold">Gallery</h2>
         <div className="flex flex-wrap justify-evenly mt-4">
           <Image
-            src={CDNFetch("/images/c5fbbc8b-4c4d-4ec9-ab18-ef8c424c56e4.png")}
+            src={CDNFetch("/images/c5fbbc8b-4c4d-4ec9-ab18-ef8c424c56e4.webp")}
             alt="ThermoBand image"
             width={600}
             height={400}
             className="mx-2 my-2 rounded-lg"
           />
           <Image
-            src={CDNFetch("/images/2559919d-8ba5-4e3c-ae3e-aae3bef21372.png")}
+            src={CDNFetch("/images/2559919d-8ba5-4e3c-ae3e-aae3bef21372.webp")}
             alt="ThermoBand image"
             width={400}
             height={400}
