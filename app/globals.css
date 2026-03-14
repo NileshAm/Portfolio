@@ -66,15 +66,18 @@ html {
 }
 
 @layer components {
+  .btn {
+    @apply bg-highlight text-black rounded-xl justify-center flex cursor-pointer;
+  }
   .btn-hover {
-    @apply hover:bg-highlight hover:text-secondary transition-all hover:scale-105;
+    @apply hover:bg-highlight-light hover:text-black transition-all hover:scale-105 hover:font-bold;
   }
 
   .project-title {
-    @apply text-5xl my-5 ms-2 text-center;
+    @apply text-5xl my-5 ms-2 text-center font-bold underline underline-offset-4;
   }
 
-  .content-full{
+  .content-full {
     @apply md:-mx-16 -mx-4;
   }
 }
