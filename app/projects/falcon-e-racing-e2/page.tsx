@@ -64,8 +64,8 @@ const page = () => {
               "/images/Falcon_E_Racing_E2/6afcc2ad-1efb-43d0-8502-77b5ba427c46.jpg"
             }
             alt="Falcon E Racing"
-            width={600}
-            height={400}
+            width={500}
+            height={300}
             className="md:mx-6 rounded-lg md:w-auto w-full h-auto shadow-lg object-cover"
           />
         </div>
