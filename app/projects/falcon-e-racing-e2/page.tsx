@@ -5,8 +5,8 @@ const page = () => {
   return (
     <main className="px-3">
       <h1 className="project-title">Falcon E Racing</h1>
-      <div className="flex xl:flex-row flex-col">
-        <div className="ms-2 xl:w-1/2">
+      <div className="flex xl:flex-row flex-col gap-6">
+        <div className="ms-2 xl:w-[600px] shrink-0">
           <h2 className="text-3xl mt-3 underline">Overview</h2>
           <table className="mt-2 md:mx-5 mx-2 w-full">
             <thead>
@@ -58,15 +58,15 @@ const page = () => {
             </tbody>
           </table>
         </div>
-        <div className="xl:w-1/2 mt-6 xl:mt-0 flex justify-center items-start">
+        <div className="flex-1 mt-6 xl:mt-0 flex items-start">
           <Image
             src={
               "/images/Falcon_E_Racing_E2/6afcc2ad-1efb-43d0-8502-77b5ba427c46.webp"
             }
             alt="Falcon E Racing"
-            width={200}
-            height={100}
-            className="md:mx-6 rounded-lg md:w-auto w-full h-auto shadow-lg object-cover"
+            width={800}
+            height={400}
+            className="rounded-lg w-full max-h-[500px] shadow-lg object-cover"
           />
         </div>
       </div>
