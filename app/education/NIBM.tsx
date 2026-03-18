@@ -70,7 +70,7 @@ const NIBM = () => {
           <Image
             src={CDNFetch("/images/db163e20-0537-47a2-994b-b4ca675881e3.webp")}
             alt="NIBM image"
-            className="md:w-1/5 w-full rounded-lg h-fit"
+            className="md:w-1/5 w-full rounded-lg h-auto mt-5 md:mt-0 self-start object-contain"
             width={200}
             height={400}
           />
@@ -112,7 +112,7 @@ const NIBM = () => {
             </div>
             <video
               controls
-              className="rounded-lg md:w-1/2 -z-10 -ms-3 md:ms-0"
+              className="rounded-lg  -z-10 -ms-3 md:ms-0"
               autoPlay
               muted
               loop

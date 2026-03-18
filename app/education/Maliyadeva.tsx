@@ -60,7 +60,7 @@ const Maliyadeva = () => {
             alt="Maliyadeva College"
             width={500}
             height={(500 / 4) * 3}
-            className="rounded-lg mt-3 md:w-1/3 h-fit"
+            className="rounded-lg mt-5 md:mt-0 md:w-1/3 w-full h-auto self-start object-contain"
           />
         </div>
       </SectionTopic>
