@@ -118,11 +118,11 @@ const UOM = () => {
             </p>
           </div>
           <Image
-            src={CDNFetch("/images/be0393d2-2e99-4a22-82ee-4dacbfdc5bdd.jpg")}
+            src={CDNFetch("/images/be0393d2-2e99-4a22-82ee-4dacbfdc5bdd.webp")}
             alt="University of Moratuwa"
             width={600}
             height={(600 / 4) * 3}
-            className="rounded-lg mt-3 w-auto"
+            className="rounded-lg mt-5 md:mt-0 w-full md:w-1/4 md:ms-4 h-auto object-contain self-start"
           />
         </div>
       </SectionTopic>
@@ -143,21 +143,21 @@ const UOM = () => {
               <div className="flex justify-evenly flex-wrap mt-2 pe-5 md:pe-0">
                 <Image
                   src={CDNFetch(
-                    "/images/9f540a0e-9302-4341-aeda-7d520acef92c.jpg"
+                    "/images/9f540a0e-9302-4341-aeda-7d520acef92c.webp",
                   )}
                   alt="Robogames Image"
                   width={350}
                   height={(350 / 9) * 16}
-                  className="rounded-lg mt-3 md:w-auto w-full ms-3 md:me-0 me-10"
+                  className="rounded-lg mt-3 md:w-auto w-full h-auto ms-3 md:me-0 me-10 max-h-[400px] object-contain self-start"
                 />
                 <Image
                   src={CDNFetch(
-                    "/images/e1a06a91-7854-4188-a68a-3fb596bc37df.jpg"
+                    "/images/e1a06a91-7854-4188-a68a-3fb596bc37df.webp",
                   )}
                   alt="Robogames Image"
                   width={500}
                   height={350}
-                  className="rounded-lg mt-3 md:w-auto w-full ms-3 md:me-0 me-10"
+                  className="rounded-lg mt-3 md:w-auto w-full h-auto ms-3 md:me-0 me-10 max-h-[400px] object-contain self-start"
                 />
               </div>
               <div className="w-fit p-2 my-5">
@@ -173,11 +173,13 @@ const UOM = () => {
               </div>
             </div>
             <Image
-              src={CDNFetch("/images/2784a8a5-d139-4956-869e-abfd2278b6d2.jpg")}
+              src={CDNFetch(
+                "/images/2784a8a5-d139-4956-869e-abfd2278b6d2.webp",
+              )}
               alt="Robogames Image"
               width={350}
               height={(350 / 9) * 16}
-              className="rounded-lg mt-3 w-auto ms-3 pe-2 md:pe-0 h-fit"
+              className="rounded-lg mt-3 md:w-1/4 w-full h-auto md:ms-3 pe-2 md:pe-0 self-start object-contain"
             />
           </TopicList>
           <TopicList
@@ -193,18 +195,18 @@ const UOM = () => {
               temperature data and presents it in real time, highlighting both
               engineering integration and embedded system development.
             </p>
+            <div className="w-fit p-2 my-5">
+              <Button
+                href="/projects/ThermoBand"
+                variant="secondary"
+                size="sm"
+                icon={<FaArrowRight />}
+                className="w-full"
+              >
+                Read more
+              </Button>
+            </div>
           </TopicList>
-          <div className="w-fit p-2 my-5">
-            <Button
-              href="/projects/ThermoBand"
-              variant="secondary"
-              size="sm"
-              icon={<FaArrowRight />}
-              className="w-full"
-            >
-              Read more
-            </Button>
-          </div>
         </ol>
       </SectionTopic>
     </Sections>

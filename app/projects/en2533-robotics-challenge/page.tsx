@@ -187,7 +187,7 @@ const page = () => {
         <h2 className="text-3xl underline font-bold">Gallery</h2>
         <div className="flex flex-wrap justify-evenly mt-4">
           <Img
-            src={CDNFetch("/images/74bad68f-a2de-40cd-be93-ab241adf3510.jpg")}
+            src={CDNFetch("/images/74bad68f-a2de-40cd-be93-ab241adf3510.webp")}
             alt="Robotics Img"
             containerClassName="w-1/3"
             className="m-5 rounded-xl"

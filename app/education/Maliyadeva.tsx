@@ -56,11 +56,11 @@ const Maliyadeva = () => {
             </div>
           </div>
           <Image
-            src={CDNFetch("/images/56b8ffc1-e90d-4f18-822d-3ca6f2a376cc.jpg")}
+            src={CDNFetch("/images/56b8ffc1-e90d-4f18-822d-3ca6f2a376cc.webp")}
             alt="Maliyadeva College"
             width={500}
             height={(500 / 4) * 3}
-            className="rounded-lg mt-3 md:w-1/3 h-fit"
+            className="rounded-lg mt-5 md:mt-0 md:w-1/3 w-full h-auto self-start object-contain"
           />
         </div>
       </SectionTopic>

@@ -5,8 +5,8 @@ const page = () => {
   return (
     <main className="px-3">
       <h1 className="project-title">Falcon E Racing</h1>
-      <div className="flex xl:flex-row flex-col">
-        <div className="ms-2 xl:w-1/2">
+      <div className="flex xl:flex-row flex-col gap-6">
+        <div className="ms-2 xl:w-1/2 shrink-0">
           <h2 className="text-3xl mt-3 underline">Overview</h2>
           <table className="mt-2 md:mx-5 mx-2 w-full">
             <thead>
@@ -58,15 +58,15 @@ const page = () => {
             </tbody>
           </table>
         </div>
-        <div className="xl:w-1/2 mt-6 xl:mt-0 flex justify-center items-start">
+        <div className="flex-1 mt-6 mx-3 xl:mt-0 flex items-start">
           <Image
             src={
-              "/images/Falcon_E_Racing_E2/6afcc2ad-1efb-43d0-8502-77b5ba427c46.jpg"
+              "/images/Falcon_E_Racing_E2/6afcc2ad-1efb-43d0-8502-77b5ba427c46.webp"
             }
             alt="Falcon E Racing"
-            width={500}
-            height={300}
-            className="md:mx-6 rounded-lg md:w-auto w-full h-auto shadow-lg object-cover"
+            width={800}
+            height={400}
+            className="rounded-lg w-full max-h-[500px] shadow-lg object-cover"
           />
         </div>
       </div>
@@ -125,7 +125,7 @@ const page = () => {
         <div className="flex flex-wrap justify-evenly mt-4">
           <Image
             src={CDNFetch(
-              "/images/Falcon_E_Racing_E2/6afcc2ad-1efb-43d0-8502-77b5ba427c46.jpg",
+              "/images/Falcon_E_Racing_E2/6afcc2ad-1efb-43d0-8502-77b5ba427c46.webp",
             )}
             alt="Robogames 2025"
             width={750}
@@ -134,7 +134,7 @@ const page = () => {
           />
           <Image
             src={CDNFetch(
-              "/images/Falcon_E_Racing_E2/1986d126-9d51-42e2-a5dd-c9f9449c7d99.jpg",
+              "/images/Falcon_E_Racing_E2/1986d126-9d51-42e2-a5dd-c9f9449c7d99.webp",
             )}
             alt="Robogames 2025"
             width={250}
@@ -143,7 +143,7 @@ const page = () => {
           />
           <Image
             src={CDNFetch(
-              "/images/Falcon_E_Racing_E2/015ccb09-46b2-4d9e-a90b-912aa462bbd6.jpg",
+              "/images/Falcon_E_Racing_E2/015ccb09-46b2-4d9e-a90b-912aa462bbd6.webp",
             )}
             alt="Robogames 2025"
             width={750}
@@ -152,16 +152,16 @@ const page = () => {
           />
           <Image
             src={CDNFetch(
-              "/images/Falcon_E_Racing_E2/becdaf67-79a6-47b4-bee8-b2501a501d6d.jpg",
+              "/images/Falcon_E_Racing_E2/becdaf67-79a6-47b4-bee8-b2501a501d6d.webp",
             )}
             alt="Robogames 2025"
             width={500}
             height={250}
-            className="mx-2 my-2 rounded-lg"
+            className="mx-2 my-2 rounded-lg object-cover"
           />
           <Image
             src={CDNFetch(
-              "/images/Falcon_E_Racing_E2/e23aae3c-b215-4c6c-816a-1a0cfa93c703.jpg",
+              "/images/Falcon_E_Racing_E2/e23aae3c-b215-4c6c-816a-1a0cfa93c703.webp",
             )}
             alt="Robogames 2025"
             width={1000}

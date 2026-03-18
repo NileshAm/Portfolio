@@ -39,7 +39,7 @@ const page = () => {
         <div className="relative md:w-1/3 m-5 mt-4 h-fit flex justify-center">
            <div className="absolute inset-0 bg-gradient-to-tr from-primary to-secondary rounded-full blur-3xl opacity-30 animate-pulse transform scale-90"></div>
            <Image
-            src={CDNFetch("/images/profile-photo.jpg")}
+            src={CDNFetch("/images/profile-photo.webp")}
             width={300}
             height={300}
             alt="Picture of the author"

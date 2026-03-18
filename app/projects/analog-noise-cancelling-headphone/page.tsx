@@ -167,28 +167,28 @@ const page = () => {
         <h2 className="text-3xl underline font-bold">Gallery</h2>
         <div className="flex flex-wrap justify-evenly mt-4">
           <Img
-            src={CDNFetch("/images/0e3e650e-163d-4c91-8ece-73885bd5730b.jpg")}
+            src={CDNFetch("/images/0e3e650e-163d-4c91-8ece-73885bd5730b.webp")}
             alt="Headphone Image"
             containerClassName="w-1/3"
             className="m-5 rounded-lg"
             aspectRatio={1280/720}
             />
           <Img
-            src={CDNFetch("/images/3ece981b-26ae-48db-8bca-b2fc7a97f510.jpg")}
+            src={CDNFetch("/images/3ece981b-26ae-48db-8bca-b2fc7a97f510.webp")}
             alt="Headphone Image"
             containerClassName="w-1/3 "
             className="m-5 rounded-lg"
             aspectRatio={2992/2856}
             />
           <Img
-            src={CDNFetch("/images/5aafe34a-c073-474c-8aa3-7177c522bbe5.jpg")}
+            src={CDNFetch("/images/5aafe34a-c073-474c-8aa3-7177c522bbe5.webp")}
             alt="Headphone Image"
             containerClassName="w-1/3 "
             className="m-5 rounded-lg"
             aspectRatio={2992/2848}
             />
           <Img
-            src={CDNFetch("/images/5b83d79b-60a1-4141-9158-2f55e1990dd9.jpg")}
+            src={CDNFetch("/images/5b83d79b-60a1-4141-9158-2f55e1990dd9.webp")}
             alt="Headphone Image"
             containerClassName="w-1/3 "
             className="m-5 rounded-lg"
