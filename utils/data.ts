@@ -10,6 +10,16 @@ export const projects = [
   //   tags: ["Automotive", "PCB Design", "Embedded Systems"],
   // },
   {
+    id: "cable-driven-parallel-robot",
+    title: "Cable-Driven Parallel Robot",
+    description:
+      "Led a five-engineer team developing a cable-driven parallel robot, contributing to the system architecture and taking primary responsibility for the STM32 motor controller, PCB, and firmware.",
+    image:
+      "/images/Cable_driven_parrellal_robot/20260704_143454.jpg",
+    link: "/projects/cable-driven-parallel-robot",
+    tags: ["Robotics", "STM32", "PCB Design"],
+  },
+  {
     id: "robo-games-2025",
     title: "RoboGames 2025",
     description:
