@@ -106,6 +106,19 @@ const galleryImages = [
   },
 ];
 
+const galleryVideos = [
+  {
+    src: `${mediaPath}/20260722_123631.mp4`,
+    caption: "Cable-driven parallel robot motion test",
+    ariaLabel: "Cable-driven parallel robot motion test",
+  },
+  {
+    src: `${mediaPath}/20260721_234540_1.mp4`,
+    caption: "Additional cable-driven parallel robot test footage",
+    ariaLabel: "Additional cable-driven parallel robot test footage",
+  },
+];
+
 const Page = () => {
   return (
     <main className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
@@ -155,7 +168,7 @@ const Page = () => {
           </dl>
 
           <a
-            href="https://github.com/Team-Lumon/Lumon_Bot_MotorDriver_Firmware"
+            href="https://github.com/team-lumon"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-8 inline-flex items-center gap-2 rounded-xl bg-highlight px-5 py-3 font-semibold text-black transition-transform hover:scale-105 hover:bg-highlight-light"
@@ -300,33 +313,38 @@ const Page = () => {
           </p>
         </div>
 
-        <figure className="mt-8 overflow-hidden rounded-2xl border border-white/10 bg-surface/60">
-          <video
-            controls
-            playsInline
-            preload="metadata"
-            poster={CDNFetch(`${mediaPath}/20260722_000959.jpg`)}
-            aria-label="Cable-driven parallel robot motion test"
-            className="aspect-video w-full bg-black object-contain"
-          >
-            <source
-              src={CDNFetch(`${mediaPath}/20260722_123631.mp4`)}
-              type="video/mp4"
-            />
-            Your browser does not support embedded video.
-          </video>
-          <figcaption className="flex flex-col gap-2 border-t border-white/10 px-5 py-4 text-sm text-textSecondary sm:flex-row sm:items-center sm:justify-between">
-            <span>Cable-driven parallel robot motion test</span>
-            <a
-              href={CDNFetch(`${mediaPath}/20260722_123631.mp4`)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="font-semibold text-primary-light underline underline-offset-4 hover:text-accent"
+        <div className="mt-8 grid items-start gap-5 lg:grid-cols-2">
+          {galleryVideos.map((video) => (
+            <figure
+              key={video.src}
+              className="overflow-hidden rounded-2xl border border-white/10 bg-surface/60"
             >
-              Open the original video
-            </a>
-          </figcaption>
-        </figure>
+              <video
+                controls
+                muted
+                playsInline
+                preload="metadata"
+                poster={CDNFetch(`${mediaPath}/20260722_000959.jpg`)}
+                aria-label={video.ariaLabel}
+                className="aspect-square w-full bg-black object-contain"
+              >
+                <source src={CDNFetch(video.src)} type="video/mp4" />
+                Your browser does not support embedded video.
+              </video>
+              <figcaption className="flex flex-col gap-2 border-t border-white/10 px-5 py-4 text-sm text-textSecondary sm:flex-row sm:items-center sm:justify-between">
+                <span>{video.caption}</span>
+                <a
+                  href={CDNFetch(video.src)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-primary-light underline underline-offset-4 hover:text-accent"
+                >
+                  Open video
+                </a>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
 
         <div className="mt-5 grid items-start gap-5 md:grid-cols-2">
           {galleryImages.map((image) => (
